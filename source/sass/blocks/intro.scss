@@ -1,0 +1,20 @@
+@use '../global/variables' as *;
+
+.intro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 389px;
+  padding-top: 90px;
+  background-color: #6b869d;
+  background-image: url('/img/intro-background-mobile.jpg');
+
+  &:after {
+    content: url('/img/intro-triangle.svg');
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

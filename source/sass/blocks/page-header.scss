@@ -1,0 +1,36 @@
+@use '../global/variables' as *;
+
+.page-header {
+  position: relative;
+  min-height: 56px;
+}
+.page-header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__logo-link {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.menu__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 56px;
+  border: none;
+  padding: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.page-header__menu {
+  display: none;
+}

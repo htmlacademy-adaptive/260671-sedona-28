@@ -1,8 +1,10 @@
+@use '../global/variables' as *;
+
 .page-container {
-  min-width: $MOBILE-WIDTH;
-  max-width: $DESKTOP-WIDTH;
+  width: 320px;
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  background-color: #FFFFFF;
-  color: tomato;
+  background-color: $WHITE;
 }

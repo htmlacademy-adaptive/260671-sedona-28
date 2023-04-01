@@ -1,5 +1,8 @@
-@use "global/variables.scss";
-@use "global/visually-hidden.scss";
-@use "global/normalize.scss";
-@use "blocks/page-body.scss";
-@use "blocks/page-container.scss";
+@use 'global/visually-hidden';
+@use 'global/fonts';
+@use 'global/normalize';
+@use 'blocks/page-body';
+@use 'blocks/page-container';
+@use 'blocks/page-header';
+@use 'blocks/intro';
+@use 'blocks/advantages';
