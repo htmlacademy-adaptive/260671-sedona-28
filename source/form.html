@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <div class="page-container">
       <header class="page-header">
         <nav class="page-header__nav">
@@ -41,9 +42,9 @@
           <form class="review__form" method="get" action="https://echo.htmlacademy.ru/">
             <fieldset class="feedback__fieldset">
               <legend class="feedback__legend">Представьтесь:</legend>
-              <label for="feedback-name-field" class="feedback__label">ИМЯ*:</label>
+              <label for="feedback-name-field" class="feedback__label">Имя*:</label>
               <input class="feedback__input" name="feedback-name-field" type="text" required value="Пётр">
-              <label for="feedback-surname-field" class="feedback__label">ФАМИЛИЯ*:</label>
+              <label for="feedback-surname-field" class="feedback__label">Фамилия*:</label>
               <input class="feedback__input" name="feedback-surname-field" type="text" required value="Пустота">
               <label for="feedback-patronymic-field" class="feedback__label">Отчество:</label>
               <input class="feedback__input" name="feedback-patronymic-field" type="text" value="Викторович">
@@ -56,7 +57,7 @@
               <input class="feedback__input" name="feedback-email-field" type="email" required placeholder="Введите e-mail">
             </fieldset>
             <fieldset class="feedback__fieldset">
-              <legend class="feedback__legend">ВАше Общее впечатление:</legend>
+              <legend class="feedback__legend">Ваше общее впечатление:</legend>
               <ul class="feedback__list feedback__list--impression">
                 <li class="feedback__item--impression">
                   <label class="feedback__label-radio" for="feedback-impression-1">
@@ -82,7 +83,7 @@
               </ul>
             </fieldset>
             <fieldset class="feedback__fieldset">
-              <legend class="feedback__legend">посещенные достопримечательности:</legend>
+              <legend class="feedback__legend">Посещенные достопримечательности:</legend>
               <ul class="feedback__list feedback__list--attraction">
                 <li class="feedback__item--attraction">
                   <label class="feedback__label-checkbox" for="feedback-attraction-1">
@@ -116,7 +117,7 @@
             </fieldset>
             <fieldset class="feedback__fieldset">
               <legend class="feedback__legend">Опишите свои эмоции:</legend>
-              <textarea name="feedback-emotions-field" id="" cols="30" rows="4">Опишите подробно все свои восторги </textarea>
+              <textarea name="feedback-emotions-field" id="" cols="30" rows="4">Опишите подробно все свои восторги</textarea>
             </fieldset>
             <button class="btn__primary feedback__button">Отправить отзыв</button>
             <span class="feedback__required">* — обязательные поля</span>
@@ -152,6 +153,9 @@
           <li class="page-footer__social-item">
             <a class="page-footer__social-link" href="#">
               <span class="visually-hidden">YouTube</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z"/>
+              </svg>
             </a>
           </li>
         </ul>
