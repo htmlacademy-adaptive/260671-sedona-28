@@ -1,6 +1,7 @@
 @use '../global/variables' as *;
 
 .advantages__header {
+  min-height: 205px;
   padding: 32px 18px 16px;
 }
 
@@ -19,27 +20,38 @@
   text-transform: uppercase;
 }
 
-.advantage-1 {
+.advantage__container {
   position: relative;
   min-height: 227px;
-  padding: 80px 18px 40px;
+  padding: 70px 18px 40px;
   background-color: $BASIC-BLUE;
   color: $WHITE;
-
-  &:after {
-    content: "";
-    background-image: url('/img/advantages-triangle.svg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    position: absolute;
-    width: 100%;
-    height: 57px;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-  }
 }
+
+.advantage-1__container::after {
+  content: "";
+  background-image: url('/img/advantages-triangle.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: absolute;
+  width: 100%;
+  height: 57px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.advantage-2__container {
+  min-height: 191px;
+  padding: 37px 18px;
+}
+
+.advantage__image {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
 .advantages__title {
   margin-bottom: 11px;
   font-size: 18px;
@@ -106,4 +118,13 @@
 
 .feature__text {
   text-align: left;
+}
+
+.advantages__items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 49px;
+  padding: 24px 18px 28px;
+  background-color: $GRAY;
 }
