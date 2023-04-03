@@ -1,0 +1,20 @@
+@use '../global/variables' as *;
+
+.find {
+  padding: 39px 18px 49px;
+}
+
+.find__title {
+  margin-bottom: 21px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.find__text {
+  margin-bottom: 31px;
+  text-transform: uppercase;
+  text-align: center;
+}

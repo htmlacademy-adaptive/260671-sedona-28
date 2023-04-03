@@ -125,6 +125,10 @@
   flex-direction: column;
   flex-wrap: wrap;
   gap: 49px;
-  padding: 24px 18px 28px;
+  padding: 25px 18px 28px;
   background-color: $GRAY;
+}
+
+.advantage__secondary:last-child {
+  padding-top: 1px;
 }

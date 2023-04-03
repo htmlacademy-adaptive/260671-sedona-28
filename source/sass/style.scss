@@ -1,8 +1,11 @@
 @use 'global/visually-hidden';
 @use 'global/fonts';
 @use 'global/normalize';
+@use 'global/buttons';
 @use 'blocks/page-body';
 @use 'blocks/page-container';
 @use 'blocks/page-header';
 @use 'blocks/intro';
 @use 'blocks/advantages';
+@use 'blocks/find';
+@use 'blocks/footer';

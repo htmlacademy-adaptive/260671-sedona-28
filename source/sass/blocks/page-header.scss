@@ -19,18 +19,38 @@
 
 .menu__toggle {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
   right: 0;
   width: 56px;
   height: 56px;
   border: none;
   padding: 0;
+  background-color: $WHITE;
 
   &:hover {
     cursor: pointer;
   }
 }
 
-.page-header__menu {
+.menu__toggle svg {
+  fill: $BASIC-BLUE;
+}
+
+.page-header__menu--closed {
   display: none;
 }
+
+.page-header__menu--opened {
+  display: flex;
+}
+
+.page-header__menu {
+  position: absolute;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.page-header__menu-
