@@ -3,7 +3,25 @@
 .intro-secondary {
   display: flex;
   flex-direction: column;
-  min-height: 356px;
+  min-height: 346px;
+}
+
+.intro-secondary__header {
+  padding:  38px 20px 25px;
+}
+
+.intro-secondary__title {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.intro-secondary__description {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .intro-secondary__banner {
@@ -13,7 +31,7 @@
   order: -1;
   min-height: 158px;
   padding: 18px;
-  margin-bottom: 37px;
+  padding-top: 4px;
   background-image: url('/img/intro-secondary.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,18 +49,4 @@
     transform: translateX(-50%);
 
   }
-}
-
-.intro-secondary__title {
-  margin-bottom: 35px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.intro-secondary__description {
-  text-align: center;
-  text-transform: uppercase;
 }
