@@ -1,0 +1,32 @@
+@use './global/variables' as *;
+
+.photo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.photo__item {
+  padding: 24px 20px 25px;
+  border-top: 1px solid $GRAY;
+
+}
+
+.photo-card__content {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.photo__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.photo__img {
+  order: -1;
+  margin-bottom: 15px;
+  object-fit: cover;
+  object-position: center;
+}
