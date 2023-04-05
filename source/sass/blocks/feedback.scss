@@ -1,0 +1,49 @@
+@use '../global/variables' as *;
+
+.feedback {}
+
+.feedback__fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 24px 20px 39px;
+  border: none;
+  border-top: 1px solid $GRAY;
+}
+
+.feedback__legend {
+  float: left;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.feedback__label {
+  font-size: 14px;
+  line-height: 21px;
+  color: $DARK-GRAY;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.feedback__input {
+  min-height: 58px;
+  margin-bottom: 16px;
+  padding: 16px;
+  border: none;
+  background-color: $LIGHT-GRAY;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  &::placeholder {
+    color: #00000030;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
