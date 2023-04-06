@@ -20,6 +20,10 @@
   padding-bottom: 24px;
 }
 
+.feedback__fieldset--emotions {
+  padding-bottom: 32px;
+}
+
 .feedback__fieldset--submit {
   padding-bottom: 22px;
   border: none;
@@ -40,6 +44,7 @@
   line-height: 21px;
   color: $DARK-GRAY;
   align-items: center;
+  padding-left: 16px;
   text-transform: uppercase;
 }
 
@@ -49,6 +54,7 @@
   padding: 16px;
   border: none;
   background-color: $LIGHT-GRAY;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
