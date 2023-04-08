@@ -1,0 +1,22 @@
+@use '../global/variables' as *;
+
+.video {
+  min-height: 348px;
+  padding: 18px 20px 0;
+  border-top: 1px solid $GRAY;
+}
+
+.video__title {
+  margin-bottom: 26px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.video__text {
+  margin-bottom: 38px;
+  text-transform: uppercase;
+  text-align: center;
+}

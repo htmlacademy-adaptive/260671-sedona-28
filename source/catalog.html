@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page-body">
+    <div class="page-container">
+      <header class="page-header">
+        <nav class="page-header__nav">
+          <a class="page-header__logo-link" href="#">
+            <img src="./img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
+          </a>
+          <button class="menu__toggle" type="button">
+            <span class="visually-hidden menu__toggle--text">Открыть меню</span>
+            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28 6H4V10H28V6Z"/>
+              <path d="M28 14H4V18H28V14Z"/>
+              <path d="M28 22H4V26H28V22Z"/>
+            </svg>
+          </button>
+          <ul class="page-header__menu page-header__menu--nojs page-header__menu--closed">
+            <li class="page-header__menu-item">
+              <a class="page-header__menu-link" href="index.html">Главная</a>
+            </li>
+            <li class="page-header__menu-item">
+              <a class="page-header__menu-link" href="#">Фото и видео</a>
+            </li>
+            <li class="page-header__menu-item">
+              <a class="page-header__menu-link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="page-header__menu-item">
+              <a class="page-header__menu-link" href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="page-content">
+        <section class="intro-secondary">
+          <header class="intro-secondary__header">
+            <h1 class="intro-secondary__title">Фото и видео</h1>
+            <p class="intro-secondary__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </header>
+          <div class="intro-secondary__banner">
+            <img class="intro-secondary__img" src="./img/intro-text-secondary.svg" alt="Седона.">
+          </div>
+        </section>
+        <section class="photo">
+          <h2 class="visually-hidden">Фотографии Седоны.</h2>
+          <ul class="photo__list">
+            <li class="photo__item">
+              <div class="photo-card__content">
+                <h3 class="photo__title">неродные просторы</h3>
+                <p class="photo__author">Автор фото: Борис</p>
+                <img class="photo__img" src="./img/photo-1-mobile.jpg" width="280" height="280" alt="">
+                <span class="photo__likes">1350</span>
+              </div>
+            </li>
+            <li class="photo__item">
+              <div class="photo-card__content">
+                <h3 class="photo__title">Местная растительность</h3>
+                <p class="photo__author">Автор фото: Сергей</p>
+                <img class="photo__img" src="./img/photo-2-mobile.jpg" width="280" height="280" alt="">
+                <span class="photo__likes">143</span>
+              </div>
+            </li>
+            <li class="photo__item">
+              <div class="photo-card__content">
+                <h3 class="photo__title">Дорога на север</h3>
+                <p class="photo__author">Автор фото: Петр</p>
+                <img class="photo__img" src="./img/photo-3-mobile.jpg" width="280" height="280" alt="">
+                <span class="photo__likes">96</span>
+              </div>
+            </li>
+            <li class="photo__item">
+              <div class="photo-card__content">
+                <h3 class="photo__title">Мост дьявола</h3>
+                <p class="photo__author">Автор фото: Антон</p>
+                <img class="photo__img" src="./img/photo-4-mobile.jpg" width="280" height="280" alt="">
+                <span class="photo__likes">254</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="video">
+          <h2 class="video__title">Все еще сомневаетесь?</h2>
+          <p class="video__text">Смотрите видеопрезентацию и скорее&nbsp;за билетами, пока они не подорожали в очередной раз!</p>
+          <img class="video__plug" src="./img/video-plug-mobile.jpg" width="280" height="177" alt="Временная заглушка. Скоро тут будет видеопрезентация.">
+        </section>
+      </main>
+      <footer class="page-footer">
+        <p class="page-footer__hashtag">#visitsedona</p>
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link" href="#">
+              <span class="visually-hidden">Vkontakte</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_29705_1038)">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_29705_1038">
+                    <rect width="24" height="24"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link" href="#">
+              <span class="visually-hidden">Telegram</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.4391 4.62225L19.2704 19.566C19.0311 20.6205 18.4079 20.883 17.5221 20.3865L12.6936 16.8285L10.3641 19.0695C10.1061 19.3275 9.8909 19.5427 9.39365 19.5427L9.7409 14.6257L18.6891 6.54C19.0784 6.1935 18.6044 6.00075 18.0846 6.348L7.02215 13.314L2.25965 11.823C1.2239 11.4997 1.20515 10.7872 2.47565 10.29L21.1034 3.11325C21.9659 2.79 22.7204 3.30525 22.4391 4.623V4.62225Z"/>
+              </svg>
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link" href="#">
+              <span class="visually-hidden">YouTube</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="page-footer__developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <svg width="29" height="35" viewBox="0 0 29 35" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"/>
+          </svg>
+        </a>
+      </footer>
+    </div>
+    <script src="js/menu-toggle.js"></script>
+  </body>
+</html>

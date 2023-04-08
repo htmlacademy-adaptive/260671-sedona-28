@@ -1,0 +1,10 @@
+@use '../global/variables' as *;
+
+.page-container {
+  width: $MOBILE-WIDTH;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: $WHITE;
+}

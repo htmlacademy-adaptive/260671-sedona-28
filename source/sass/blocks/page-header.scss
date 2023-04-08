@@ -1,0 +1,79 @@
+@use '../global/variables' as *;
+
+.page-header {
+  position: relative;
+  min-height: 56px;
+}
+
+.page-header__logo-link {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.menu__toggle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 56px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  z-index: 10;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.menu__toggle svg {
+  fill: $BASIC-BLUE;
+}
+
+.page-header__menu--closed {
+  display: none;
+}
+
+.page-header__menu--opened {
+  display: flex;
+}
+
+.page-header__menu {
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: 3;
+}
+
+.page-header__menu-item {
+  width: 100%;
+}
+
+.page-header__menu-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 55px;
+  background-color: $BASIC-BLUE;
+  border-bottom: 1px solid $DARK-GRAY;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $WHITE;
+
+  &:hover {
+    background-color: $HOVER-BLUE;
+  }
+}
+
+.page-header__menu-item:last-of-type .page-header__menu-link{
+  // background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}

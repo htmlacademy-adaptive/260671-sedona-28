@@ -1,0 +1,67 @@
+@use '../global/variables' as *;
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  min-height: 243px;
+  padding: 35px 18px 33px;
+}
+
+.page-footer__hashtag {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.page-footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 48px;
+  min-width: 48px;
+  background-color: $BASIC-BLUE;
+
+  &:hover{
+    background-color: $HOVER-BLUE;
+  }
+
+  &:focus {
+    background-color: $HOVER-BLUE;
+    outline: none;
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  }
+
+  &:active {
+    background-color: $DOWN-BLUE;
+  }
+}
+
+.page-footer__social-link svg {
+  fill: $WHITE;
+}
+
+
+.page-footer__social-link:active svg {
+  fill: #FFFFFF70;
+}
+
+.page-footer__developer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $BLACK;
+  text-transform: uppercase;
+}

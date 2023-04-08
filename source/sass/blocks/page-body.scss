@@ -1,0 +1,13 @@
+@use '../global/variables' as *;
+
+.page-body {
+  display: flex;
+  justify-content: center;
+  background-color: $LIGHT-GRAY;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: $BLACK;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
