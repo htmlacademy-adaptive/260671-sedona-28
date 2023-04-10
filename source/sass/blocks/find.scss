@@ -1,7 +1,14 @@
 @use '../global/variables' as *;
 
 .find {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 39px 18px 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 155px 55px;
+  }
 }
 
 .find__title {
@@ -17,4 +24,9 @@
   margin-bottom: 31px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.find__btn {
+  width: 100%;
+  max-width: 458px;
 }

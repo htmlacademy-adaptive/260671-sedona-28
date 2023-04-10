@@ -9,6 +9,9 @@
   padding-top: 90px;
   background-color: #6b869d;
   background-image: url('/img/intro-background-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   &:after {
     content: "";
@@ -22,5 +25,17 @@
     left: 50%;
     transform: translateX(-50%);
 
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 518px;
+    padding-top: 77px;
+  }
+}
+
+.intro__text {
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
   }
 }
