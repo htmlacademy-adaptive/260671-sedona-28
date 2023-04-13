@@ -1,7 +1,7 @@
 @use '../global/variables' as *;
 
 .page-container {
-  max-width: $tablet-width;
+  max-width: $mobile-width;
   min-height: 100%;
   display: flex;
   flex-direction: column;
