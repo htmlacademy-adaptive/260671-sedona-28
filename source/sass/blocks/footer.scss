@@ -7,6 +7,13 @@
   gap: 30px;
   min-height: 243px;
   padding: 35px 18px 33px;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 120px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .page-footer__hashtag {

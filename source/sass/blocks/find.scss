@@ -7,7 +7,7 @@
   padding: 39px 18px 49px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 155px 55px;
+    padding: 62px 155px 55px;
   }
 }
 
@@ -18,12 +18,21 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+    font-size: 30px;
+  }
 }
 
 .find__text {
   margin-bottom: 31px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .find__btn {
