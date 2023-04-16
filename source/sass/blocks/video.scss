@@ -1,9 +1,17 @@
 @use '../global/variables' as *;
 
 .video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 348px;
   padding: 18px 20px 0;
   border-top: 1px solid $gray;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 58px 60px 40px;
+  }
 }
 
 .video__title {
@@ -13,10 +21,29 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 31px;
+  }
 }
 
 .video__text {
   margin-bottom: 38px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 445px;
+    margin-bottom: 88px;
+  }
+}
+
+.video__plug {
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 500px;
+  }
 }

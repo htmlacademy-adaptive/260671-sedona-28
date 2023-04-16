@@ -1,6 +1,7 @@
 @use '../global/variables' as *;
 
 .page-container {
+  width: 100%;
   max-width: $tablet-width;
   min-height: 100%;
   display: flex;
