@@ -2,10 +2,16 @@
 
 .photo__list {
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding-left: 60px;
     padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -15,21 +21,34 @@
   border-top: 1px solid $gray;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
     min-height: 347px;
     background-color: $light-gray;
     padding: 0;
     border-top: none;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 267px;
+  }
 }
 
 .photo__item:first-of-type {
-  width: 100%;
+  @media (min-width: $tablet-width) {
+grid-column: 1 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+grid-column: 1 / 4;
+  }
 }
 
 .photo-card__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .photo-card__content {
@@ -38,6 +57,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 22px 20px 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000050;
+    color: $white;
   }
 }
 
@@ -87,6 +115,10 @@
     width: 100%;
     margin-bottom: 0;
   }
+
+  // @media (min-width: $desktop-width) {
+  //   position: relative;
+  // }
 }
 
 .photo__item:first-of-type .photo__img {

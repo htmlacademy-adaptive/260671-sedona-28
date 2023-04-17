@@ -12,6 +12,10 @@
     border: none;
     padding: 58px 60px 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 58px 201px 86px 199px;
+  }
 }
 
 .video__title {

@@ -10,6 +10,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 588px;
+  }
+}
+
+.intro-secondary--form {
+  @media (min-width: $desktop-width) {
     min-height: 570px;
   }
 }
@@ -25,7 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 54px;
+    padding:  98px 155px 54px;
   }
 }
 
