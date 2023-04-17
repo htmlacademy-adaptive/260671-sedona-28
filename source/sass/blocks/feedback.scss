@@ -8,6 +8,12 @@
     padding: 64px 60px;
     padding-top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 120px;
+    padding-right: 120px;
+    column-gap: 100px;
+  }
 }
 
 .feedback__fieldset {
@@ -42,6 +48,9 @@
 .feedback__fieldset--impression {
   @media (min-width: $tablet-width) {
     padding: 63px 36px 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 70px 53px 0;
   }
 }
 
