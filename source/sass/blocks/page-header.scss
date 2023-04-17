@@ -75,6 +75,10 @@
   @media (min-width: $tablet-width) {
     margin-right: 153px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 240px;
+  }
 }
 
 .page-header__menu-link {

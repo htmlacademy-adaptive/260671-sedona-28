@@ -7,12 +7,19 @@
   gap: 30px;
   min-height: 243px;
   padding: 35px 18px 33px;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     min-height: 120px;
     padding-left: 60px;
     padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 34px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
@@ -22,6 +29,10 @@
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    min-width: 136px;
+  }
 }
 
 .page-footer__social-list {
