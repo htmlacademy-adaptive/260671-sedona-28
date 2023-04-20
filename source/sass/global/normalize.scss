@@ -1,3 +1,5 @@
+@use "./global/variables" as *;
+
 * {
   box-sizing: border-box;
 }
@@ -28,4 +30,20 @@ a {
 
 img {
   display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.desktop-show {
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.tablet-show {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
