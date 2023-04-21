@@ -89,6 +89,10 @@
     order: 2;
     padding: 54px 33px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 256px;
+  }
 }
 
 .advantage__image {
@@ -231,12 +235,14 @@
     padding: 41px 33px;
     padding-top: 41px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+  }
 }
 
 .advantage__secondary:last-child {
-  padding-top: 1px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 41px;
+  @media (max-width: $mobile-width) {
+    padding-top: 1px;
   }
 }
