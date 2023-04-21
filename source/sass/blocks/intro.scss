@@ -1,4 +1,4 @@
-@use '../global/variables' as *;
+@use "../global/variables" as *;
 
 .intro {
   position: relative;
@@ -8,14 +8,14 @@
   min-height: 389px;
   padding-top: 90px;
   background-color: #6b869d;
-  background-image: url('/img/intro-background-mobile.jpg');
+  background-image: url("/img/intro-background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  &:after {
+  &::after {
     content: "";
-    background-image: url('/img/intro-triangle.svg');
+    background-image: url("/img/intro-triangle.svg");
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -24,7 +24,6 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-
   }
 
   @media (min-width: $tablet-width) {

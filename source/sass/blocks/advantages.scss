@@ -1,4 +1,4 @@
-@use '../global/variables' as *;
+@use "../global/variables" as *;
 
 .advantages__header {
   min-height: 205px;
@@ -47,7 +47,6 @@
 }
 
 .advantage-1 {
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -55,7 +54,6 @@
 }
 
 .advantage-2 {
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -64,7 +62,7 @@
 
 .advantage-1__container::after {
   content: "";
-  background-image: url('/img/advantages-triangle.svg');
+  background-image: url("/img/advantages-triangle.svg");
   background-repeat: no-repeat;
   background-position: center top;
   position: absolute;
@@ -229,7 +227,6 @@
 }
 
 .advantage__secondary {
-
   @media (min-width: $tablet-width) {
     min-height: 256px;
     padding: 41px 33px;

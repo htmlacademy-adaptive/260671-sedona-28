@@ -1,4 +1,4 @@
-@use '../global/variables' as *;
+@use "../global/variables" as *;
 
 .feedback__form {
   @media (min-width: $tablet-width) {
@@ -32,17 +32,8 @@
   }
 }
 
-.feedback__fieldset--fullname {
-  @media (min-width: $tablet-width) {
-
-  }
-}
-
 .feedback__fieldset--contacts {
   padding-bottom: 34px;
-  @media (min-width: $tablet-width) {
-
-  }
 }
 
 .feedback__fieldset--impression {
@@ -59,6 +50,7 @@
   @media (min-width: $tablet-width) {
     padding: 48px 84px 0;
   }
+
   @media (min-width: $desktop-width) {
     padding: 73px 44px 0;
   }
@@ -248,7 +240,7 @@
   width: 22px;
   height: 16px;
   color: $dark-gray;
-  background-image: url('../img/tick.svg');
+  background-image: url("../img/tick.svg");
 }
 
 .feedback__input--emotions {

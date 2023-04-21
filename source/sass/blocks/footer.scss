@@ -1,4 +1,4 @@
-@use '../global/variables' as *;
+@use "../global/variables" as *;
 
 .page-footer {
   display: flex;
@@ -47,14 +47,14 @@
   min-width: 48px;
   background-color: $basic-blue;
 
-  &:hover{
+  &:hover {
     background-color: $hover-blue;
   }
 
   &:focus {
     background-color: $hover-blue;
     outline: none;
-    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   }
 
   &:active {
@@ -68,7 +68,7 @@
 
 
 .page-footer__social-link:active svg {
-  fill: #FFFFFF70;
+  fill: #ffffff70;
 }
 
 .page-footer__developer {
