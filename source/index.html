@@ -14,16 +14,19 @@
             <img src="./img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
           </a>
           <button class="menu__toggle" type="button">
-            <span class="visually-hidden menu__toggle--text">Открыть меню</span>
-            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <span class="visually-hidden menu__toggle--text">Открыть меню.</span>
+            <svg class="menu__icon menu__icon--open" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
               <path d="M28 6H4V10H28V6Z"/>
               <path d="M28 14H4V18H28V14Z"/>
               <path d="M28 22H4V26H28V22Z"/>
             </svg>
+            <svg class="menu__icon menu__icon--close" width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23 2.77477L20.0991 0L11.5 8.22522L2.9009 0L0 2.77477L8.5991 11L0 19.2252L2.9009 22L11.5 13.7748L20.0991 22L23 19.2252L14.4009 11L23 2.77477Z"/>
+            </svg>
           </button>
           <ul class="page-header__menu page-header__menu--nojs page-header__menu--closed">
             <li class="page-header__menu-item">
-              <a class="page-header__menu-link" href="#">Главная</a>
+              <a class="page-header__menu-link page-header__menu-link--current" href="#">Главная</a>
             </li>
             <li class="page-header__menu-item">
               <a class="page-header__menu-link" href="catalog.html">Фото и видео</a>

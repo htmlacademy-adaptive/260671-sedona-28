@@ -36,7 +36,7 @@
   }
 }
 
-.menu__toggle svg {
+.menu__icon--open {
   fill: $basic-blue;
 }
 
@@ -48,6 +48,10 @@
   }
 }
 
+.menu__icon--close {
+  display: none;
+  fill: $white;
+}
 
 .page-header__menu--opened {
   display: flex;
@@ -99,11 +103,35 @@
     background-color: $hover-blue;
   }
 
+  &:focus {
+    background-color: $hover-blue;
+  }
+
+  &:active {
+    background-color: $down-blue;
+    color: #ffffff30;
+  }
+
+  &:disabled {
+    background-color: $background-gray;
+  }
+
   @media (min-width: $tablet-width) {
     background-color: $white;
     border: none;
     font-size: 14px;
     line-height: 21px;
     color: $black;
+
+    &:hover {
+      background-color: $white;
+      color: $basic-blue;
+    }
+  }
+}
+
+.page-header__menu-link--current {
+  @media (min-width: $tablet-width) {
+    color: $brown;
   }
 }
