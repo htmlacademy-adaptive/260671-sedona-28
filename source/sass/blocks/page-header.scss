@@ -38,6 +38,36 @@
 
 .menu__icon--open {
   fill: $basic-blue;
+
+  &:hover {
+    fill: #81b3d290;
+  }
+
+  &:focus {
+    fill: #81b3d290;
+  }
+
+  &:active {
+    fill: #81b3d260;
+  }
+
+}
+
+.menu__icon--close {
+  display: none;
+  fill: $white;
+
+  &:hover {
+    fill: #ffffff90;
+  }
+
+  &:focus {
+    fill: #ffffff90;
+  }
+
+  &:active {
+    fill: #ffffff60;
+  }
 }
 
 .page-header__menu--closed {
@@ -46,11 +76,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
-}
-
-.menu__icon--close {
-  display: none;
-  fill: $white;
 }
 
 .page-header__menu--opened {
@@ -112,10 +137,6 @@
     color: #ffffff30;
   }
 
-  &:disabled {
-    background-color: $background-gray;
-  }
-
   @media (min-width: $tablet-width) {
     background-color: $white;
     border: none;
@@ -126,6 +147,16 @@
     &:hover {
       background-color: $white;
       color: $basic-blue;
+    }
+
+    &:focus {
+      background-color: $white;
+      color: $basic-blue;
+    }
+
+    &:active {
+      background-color: $white;
+      color: $dark-gray;
     }
   }
 }

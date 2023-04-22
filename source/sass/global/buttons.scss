@@ -12,4 +12,23 @@
   color: $white;
   text-transform: uppercase;
   background-color: $basic-blue;
+
+  &:hover {
+    background-color: $hover-blue;
+  }
+
+  &:focus {
+    background-color: $hover-blue;
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  }
+
+  &:active {
+    background-color: $down-blue;
+    color: #ffffff30;
+  }
+
+  &:disabled {
+    background-color: $background-gray;
+    color: $white;
+  }
 }
