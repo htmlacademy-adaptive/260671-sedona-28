@@ -58,7 +58,14 @@
                 <span class="advantage__number">— №1 —</span>
                 <p class="advantages__text advantage__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <div class="advantage__image-wrapper"><img class="advantage__image" src="../img/advantage-1.jpg" width="320" height="260"  alt="Фотография Седоны."></div>
+              <div class="advantage__image-wrapper">
+                <!-- <img class="advantage__image" src="../img/advantage-1.jpg" width="320" height="260"  alt="Фотография Седоны."> -->
+                <picture>
+                  <source media="(min-width:1200px)" srcset="../img/advantage-1-desktop@2x.jpg">
+                  <source media="(min-width:768px)" srcset="../img/advantage-1-tablet@2x.jpg">
+                  <img class="advantage__image" src="../img/advantage-1-mobile@2x.jpg" width="320" height="260"  alt="Фотография Седоны.">
+                </picture>
+              </div>
             </li>
             <li class="advantages__item advantages__item--features">
               <ul class="features">
