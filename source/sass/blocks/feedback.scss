@@ -1,0 +1,334 @@
+@use "../global/variables" as *;
+
+.feedback__form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 58px;
+    padding: 64px 60px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 120px;
+    padding-right: 120px;
+    column-gap: 100px;
+  }
+}
+
+.feedback__fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 24px 20px 39px;
+  border: none;
+  border-top: 1px solid $gray;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 0;
+    padding-top: 15px;
+    border: 0;
+  }
+}
+
+.feedback__fieldset--contacts {
+  padding-bottom: 34px;
+}
+
+.feedback__fieldset--impression {
+  @media (min-width: $tablet-width) {
+    padding: 63px 36px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 53px 0;
+  }
+}
+
+.feedback__fieldset--attraction {
+  @media (min-width: $tablet-width) {
+    padding: 48px 84px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 73px 44px 0;
+  }
+}
+
+.feedback__fieldset--impression,
+.feedback__fieldset--attraction {
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 3;
+    padding-bottom: 0;
+  }
+}
+
+.feedback__fieldset--emotions {
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 3;
+    padding: 42px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 87px 96px 0;
+  }
+}
+
+.feedback__fieldset--submit {
+  padding-bottom: 22px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 47px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 48px 96px 0;
+  }
+}
+
+.feedback__legend {
+  float: left;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 28px;
+  }
+}
+
+.feedback__label {
+  font-size: 14px;
+  line-height: 21px;
+  color: $charcoal;
+  align-items: center;
+  padding-left: 16px;
+  text-transform: uppercase;
+}
+
+.feedback__input {
+  min-height: 58px;
+  margin-bottom: 16px;
+  padding: 16px;
+  border: none;
+  background-color: $light-gray;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  &::placeholder {
+    color: #00000030;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    background-color: $background-gray;
+  }
+
+  &:focus {
+    background-color: $white;
+    border: 4px solid $background-gray;
+    padding: 12px;
+  }
+}
+
+.feedback__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.feedback__list--impression {
+  @media (min-width: $desktop-width) {
+    margin-top: 17px;
+    gap: 28px;
+  }
+}
+
+.feedback__list--attraction {
+  @media (min-width: $tablet-width) {
+    column-gap: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 31px;
+    gap: 64px;
+  }
+}
+
+.feedback__item--impression {
+  @media (min-width: $tablet-width) {
+    min-width: 280px;
+  }
+}
+
+.feedback__item--impression:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    min-width: 234px;
+  }
+}
+
+.feedback__item--attraction {
+  @media (min-width: $tablet-width) {
+    min-width: 224px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 100px;
+  }
+}
+
+.feedback__item--impression,
+.feedback__item--attraction {
+  position: relative;
+  min-height: 46px;
+  padding-left: 62px;
+  padding-top: 10px;
+}
+
+.feedback__label--impression,
+.feedback__label--attraction {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.feedback__mark--impression,
+.feedback__mark--attraction {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  left: 0;
+  top: 0;
+  background-color: $light-gray;
+  border-radius: 50%;
+}
+
+.feedback__mark--attraction {
+  border-radius: 4px;
+}
+
+.feedback__input-radio:checked + .feedback__mark--impression::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $charcoal;
+}
+
+.feedback__input-checkbox:checked + .feedback__mark--attraction::after {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 16px;
+  color: $charcoal;
+  background-image: url("../img/tick.svg");
+}
+
+.feedback__item--impression:hover .feedback__mark--impression,
+.feedback__item--attraction:hover .feedback__mark--attraction {
+  background-color: $background-gray;
+}
+
+.feedback__input-radio:focus + .feedback__mark--impression,
+.feedback__input-checkbox:focus + .feedback__mark--attraction {
+  outline: 4px solid $focus-blue;
+}
+
+.feedback__item--impression:active .feedback__mark--impression,
+.feedback__item--attraction:active .feedback__mark--attraction {
+  background-color: $heavy-gray;
+}
+
+.feedback__item--impression:active .feedback__mark--impression::after {
+  background-color: $dark-gray;
+}
+
+.feedback__item--attraction:active .feedback__mark--attraction::after {
+  opacity: 30%;
+}
+
+.feedback__input--emotions {
+  min-height: 150px;
+  padding: 16px;
+  border: none;
+  background-color: $light-gray;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  &::placeholder {
+    color: #00000030;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 160px;
+  }
+
+  &:hover {
+    background-color: $background-gray;
+  }
+
+  &:focus {
+    background-color: $white;
+    border: 4px solid $background-gray;
+    padding: 12px;
+  }
+}
+
+.feedback__button {
+  margin-bottom: 3px;
+  border: none;
+  font-family: inherit;
+  width: 100%;
+  max-width: 324px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 384px;
+  }
+}
+
+.feedback__required {
+  font-size: 12px;
+  line-height: 21px;
+  color: #33333360;
+  text-transform: uppercase;
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
+}

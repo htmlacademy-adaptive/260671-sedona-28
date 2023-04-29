@@ -1,0 +1,52 @@
+@use "./global/variables" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.desktop-show {
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.tablet-show {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

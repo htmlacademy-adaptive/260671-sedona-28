@@ -1,0 +1,50 @@
+@use "../global/variables" as *;
+
+.find {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 39px 18px 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 62px 155px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 66px;
+  }
+}
+
+.find__title {
+  margin-bottom: 21px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+    font-size: 30px;
+  }
+}
+
+.find__text {
+  margin-bottom: 31px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 458px;
+    margin-bottom: 46px;
+  }
+}
+
+.find__btn {
+  width: 100%;
+  max-width: 458px;
+}

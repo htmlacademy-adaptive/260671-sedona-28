@@ -1,0 +1,168 @@
+@use "../global/variables" as *;
+
+.page-header {
+  position: relative;
+  min-height: 56px;
+}
+
+.page-header__logo-link {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.menu__toggle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 56px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  z-index: 10;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.menu__icon--open {
+  fill: $basic-blue;
+
+  &:hover {
+    fill: #81b3d290;
+  }
+
+  &:focus {
+    fill: #81b3d290;
+  }
+
+  &:active {
+    fill: #81b3d260;
+  }
+
+}
+
+.menu__icon--close {
+  display: none;
+  fill: $white;
+
+  &:hover {
+    fill: #ffffff90;
+  }
+
+  &:focus {
+    fill: #ffffff90;
+  }
+
+  &:active {
+    fill: #ffffff60;
+  }
+}
+
+.page-header__menu--closed {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.page-header__menu--opened {
+  display: flex;
+}
+
+.page-header__menu {
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-header__menu-item {
+  width: 100%;
+}
+
+.page-header__menu-item:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    margin-right: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 240px;
+  }
+}
+
+.page-header__menu-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 56px;
+  background-color: $basic-blue;
+  border-top: 1px solid #9db7c7;
+  border-bottom: 1px solid #678fa8;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $white;
+
+  &:hover {
+    background-color: $hover-blue;
+  }
+
+  &:focus {
+    background-color: $hover-blue;
+  }
+
+  &:active {
+    background-color: $down-blue;
+    color: #ffffff30;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    border: none;
+    font-size: 14px;
+    line-height: 21px;
+    color: $black;
+
+    &:hover {
+      background-color: $white;
+      color: $basic-blue;
+    }
+
+    &:focus {
+      background-color: $white;
+      color: $basic-blue;
+    }
+
+    &:active {
+      background-color: $white;
+      color: $dark-gray;
+    }
+  }
+}
+
+.page-header__menu-link--current {
+  @media (min-width: $tablet-width) {
+    color: $brown;
+  }
+}
