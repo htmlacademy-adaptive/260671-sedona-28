@@ -6,6 +6,8 @@ import autoprefixer from 'autoprefixer';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
+import svgo from 'gulp-svgmin';
+import {deleteAsync} from 'del';
 import browser from 'browser-sync';
 
 //Html
@@ -15,6 +17,12 @@ export const html = () => {
   .pipe(htmlmin())
   .pipe(gulp.dest('build/'))
 }
+
+//Cleaner
+
+const cleaner = () =>{
+  return deleteAsync('build')
+};
 
 // Styles
 
@@ -29,19 +37,27 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
-//Scripts
+//Scripts minification
 const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
     .pipe(gulp.dest('build/js'));
 }
 
-//Images
+//Images optimisation
 
 const images = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'));
+}
+
+//SVG optimization
+
+const svg = () => {
+  return gulp.src('source/img/**/*.svg')
+  .pipe(svgo())
+  .pipe(gulp.dest('build/img'));
 }
 
 // Server
@@ -65,7 +81,17 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
+export const build = gulp.series(
+  cleaner,
+  images,
+  svg,
+  gulp.parallel(
+    html,
+    scripts,
+    styles,
+  ),
+);
 
 export default gulp.series(
-  html, scripts, images, styles, server, watcher
+  server, watcher
 );

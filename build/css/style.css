@@ -324,17 +324,17 @@ img {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+@media (min-resolution: 2dppx) {
   .intro {
     background-image: url("/img/intro-background-mobile@2x.jpg");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+@media (min-resolution: 2dppx) and (min-width: 768px) {
   .intro {
     background-image: url("/img/intro-background-tablet@2x.jpg");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+@media (min-resolution: 2dppx) and (min-width: 1200px) {
   .intro {
     background-image: url("/img/intro-background-desktop@2x.jpg");
   }
@@ -901,17 +901,17 @@ img {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+@media (min-resolution: 2dppx) {
   .intro-secondary__banner {
     background-image: url("/img/intro-secondary-mobile@2x.jpg");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+@media (min-resolution: 2dppx) and (min-width: 768px) {
   .intro-secondary__banner {
     background-image: url("/img/intro-secondary-tablet@2x.jpg");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+@media (min-resolution: 2dppx) and (min-width: 1200px) {
   .intro-secondary__banner {
     background-image: url("/img/intro-secondary-desktop@2x.jpg");
   }
