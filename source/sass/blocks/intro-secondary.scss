@@ -87,7 +87,7 @@
   min-height: 158px;
   padding: 18px;
   padding-top: 4px;
-  background-image: url("/img/intro-secondary.jpg");
+  background-image: url("/img/intro-secondary-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -108,12 +108,28 @@
     min-height: 290px;
     padding-top: 0;
     padding-bottom: 23px;
+    background-image: url("/img/intro-secondary-tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
     min-height: 301px;
     padding-top: 0;
     padding-bottom: 23px;
+    background-image: url("/img/intro-secondary-desktop.jpg");
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .intro-secondary__banner {
+    background-image: url("/img/intro-secondary-mobile@2x.jpg");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("/img/intro-secondary-tablet@2x.jpg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("/img/intro-secondary-desktop@2x.jpg");
+    }
   }
 }
 

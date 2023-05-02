@@ -3,7 +3,18 @@ import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
+import htmlmin from 'gulp-htmlmin';
+import terser from 'gulp-terser';
+import squoosh from 'gulp-libsquoosh';
 import browser from 'browser-sync';
+
+//Html
+
+export const html = () => {
+  return gulp.src('source/*.html')
+  .pipe(htmlmin())
+  .pipe(gulp.dest('build/'))
+}
 
 // Styles
 
@@ -14,8 +25,23 @@ export const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
+}
+
+//Scripts
+const scripts = () => {
+  return gulp.src('source/js/*.js')
+    .pipe(terser())
+    .pipe(gulp.dest('build/js'));
+}
+
+//Images
+
+const images = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img'));
 }
 
 // Server
@@ -23,7 +49,7 @@ export const styles = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -41,5 +67,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  styles, server, watcher
+  html, scripts, images, styles, server, watcher
 );
