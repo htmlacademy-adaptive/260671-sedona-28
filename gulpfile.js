@@ -60,6 +60,16 @@ const svg = () => {
   .pipe(gulp.dest('build/img'));
 }
 
+//WEBP convertation
+
+const webp = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+  .pipe(squoosh({
+    webp:{}
+  }))
+  .pipe(gulp.dest('build/img'))
+}
+
 // Server
 
 const server = (done) => {
@@ -85,6 +95,7 @@ export const build = gulp.series(
   cleaner,
   images,
   svg,
+  webp,
   gulp.parallel(
     html,
     scripts,
