@@ -52,6 +52,13 @@ const images = () => {
     .pipe(gulp.dest('build/img'));
 }
 
+//images copy
+
+const copyImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+    .pipe(gulp.dest('build/img'));
+}
+
 //SVG optimization
 
 const svg = () => {
@@ -88,14 +95,15 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html').on('change', () => {gulp.series(html)(); browser.reload();});
 }
 
 export const build = gulp.series(
   cleaner,
-  images,
+  copyImages,
+  // images,
   svg,
-  webp,
+  // webp,
   gulp.parallel(
     html,
     scripts,
