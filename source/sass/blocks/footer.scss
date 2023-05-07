@@ -10,8 +10,9 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     min-height: 120px;
+    padding-top: 33px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -22,6 +23,7 @@
 }
 
 .page-footer__hashtag {
+  min-width: 136px;
   font-weight: 700;
   font-size: 21px;
   line-height: 24px;
@@ -41,15 +43,17 @@
     color: $dark-gray;
   }
 
-  @media (min-width: $desktop-width) {
-    min-width: 136px;
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
   }
 }
 
 .page-footer__social-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 6px;
+  width: 100%;
 }
 
 .page-footer__social-link {

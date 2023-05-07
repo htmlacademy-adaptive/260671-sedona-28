@@ -88,7 +88,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding: 47px 0 0;
   }
 
@@ -122,6 +122,7 @@
 }
 
 .feedback__input {
+  width: 100%;
   min-height: 58px;
   margin-bottom: 16px;
   padding: 16px;
@@ -149,6 +150,33 @@
     border: 4px solid $background-gray;
     padding: 12px;
   }
+}
+
+// Custom inputs
+
+.feedback__custom-input {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.feedback__custom-input::after {
+  position: absolute;
+  display: flex;
+  padding: 20px;
+  right: 0;
+  top: 0;
+  width: 58px;
+  height: 58px;
+  background-color: $background-gray;
+  box-sizing: border-box;
+}
+
+.feedback__custom-input--phone::after {
+  content: url('../img/phone.svg');
+}
+
+.feedback__custom-input--email::after {
+    content: url('../img/email.svg');
 }
 
 .feedback__list {

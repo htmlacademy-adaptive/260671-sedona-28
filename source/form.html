@@ -80,9 +80,13 @@
             <fieldset class="feedback__fieldset feedback__fieldset--contacts">
               <legend class="feedback__legend">Контактная информация:</legend>
               <label for="feedback-phone" class="feedback__label">Контактный телефон*:</label>
-              <input class="feedback__input" id="feedback-phone" name="feedback-phone-field" type="tel" required placeholder="Введите телефон">
+              <div class="feedback__custom-input feedback__custom-input--phone">
+                <input class="feedback__input feedback__input--custom feedback__input--phone" id="feedback-phone" name="feedback-phone-field" type="tel" required placeholder="Введите телефон">
+              </div>
               <label for="feedback-email" class="feedback__label">Электронная почта*:</label>
-              <input class="feedback__input" id="feedback-email" name="feedback-email-field" type="email" required placeholder="Введите e-mail">
+              <div class="feedback__custom-input feedback__custom-input--email">
+                <input class="feedback__input feedback__input--custom feedback__input--email" id="feedback-email" name="feedback-email-field" type="email" required placeholder="Введите e-mail">
+              </div>
             </fieldset>
             <fieldset class="feedback__fieldset feedback__fieldset--impression">
               <legend class="feedback__legend">Ваше общее впечатление:</legend>
@@ -190,8 +194,8 @@
           </li>
         </ul>
         <a class="page-footer__developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18.1506 2.25H18.0502L4.5 3.58944V27.221L18.0502 34.875L31.5 27.221V3.58944L18.1506 2.25ZM29.5929 13.8266L18.0502 7.32075V7.22507H17.9498L17.8494 7.1294V7.22507L6.40706 13.8266V5.21591L17.9498 4.06782L29.5929 5.21591V13.8266ZM17.9498 8.75587L29.4926 15.1661L24.9758 17.6536L17.8494 13.6353V14.9747L23.7714 18.3233L22.868 18.8017L17.8494 15.9315V17.2709L21.6636 19.4714L20.8606 19.9498L17.8494 18.2276V19.5671L19.7565 20.6195L17.9498 21.6719L6.50743 15.2617L17.9498 8.75587ZM6.40706 16.6968L17.8494 23.2027V24.1595L9.92007 19.6628V21.0022L17.9498 25.5946V26.647L9.92007 22.1503V23.4897L17.9498 28.0821L26.0799 23.3941V18.419L29.4926 16.5055V26.0729L17.9498 32.6745L6.40706 26.1686V16.6968Z"/>
+          <svg width="28" height="36" viewBox="0 0 28 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.15 0.949951H14.05L0.549988 2.34995V27.05L14.05 35.0499L27.45 27.05V2.34995L14.15 0.949951ZM25.55 13.05L14.05 6.24995V6.14995H13.95L13.85 6.04995V6.14995L2.44999 13.05V4.04995L13.95 2.84995L25.55 4.04995V13.05ZM13.95 7.74995L25.45 14.45L20.95 17.05L13.85 12.85V14.25L19.75 17.75L18.85 18.25L13.85 15.25V16.65L17.65 18.95L16.85 19.45L13.85 17.65V19.05L15.75 20.15L13.95 21.25L2.54999 14.55L13.95 7.74995ZM2.44999 16.05L13.85 22.85V23.85L5.94999 19.15V20.55L13.95 25.35V26.45L5.94999 21.75V23.15L13.95 27.95L22.05 23.05V17.85L25.45 15.85V25.85L13.95 32.75L2.44999 25.95V16.05Z"/>
           </svg>
         </a>
       </footer>
