@@ -100,10 +100,10 @@ const watcher = () => {
 
 export const build = gulp.series(
   cleaner,
-  copyImages,
-  // images,
+  // copyImages,
+  images,
   svg,
-  // webp,
+  webp,
   gulp.parallel(
     html,
     scripts,

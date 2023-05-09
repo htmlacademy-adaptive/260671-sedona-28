@@ -82,7 +82,7 @@
 }
 
 .photo__author {
-  margin-bottom: 16px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -90,24 +90,22 @@
 }
 
 .photo__likes {
-  position: relative;
+  display: flex;
+}
+
+.photo__like-btn {
+  margin-right: 14px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: $background-gray;
+}
+
+.photo__likes-counter {
+  align-self: flex-end;
   display: block;
   min-height: 21px;
-  padding-left: 37px;
   font-weight: 700;
-
-  &::before {
-    position: absolute;
-    content: url("../img/like.svg");
-    width: 25px;
-    height: 25px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    left: -5px;
-    top: -9px;
-    color: $dark-gray;
-  }
 }
 
 .photo__img {
