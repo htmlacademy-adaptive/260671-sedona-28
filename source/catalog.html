@@ -68,59 +68,236 @@
           <h2 class="visually-hidden">Фотографии Седоны.</h2>
           <ul class="photo__list">
             <li class="photo__item">
-              <div class="photo-card__wrapper">
-                <div class="photo-card__content">
-                  <div class="photo-card__description">
-                    <h3 class="photo__title">неродные просторы</h3>
-                    <p class="photo__author">Автор фото: Борис</p>
+              <a class="photo__item--link" href="#">
+                <div class="photo-card__wrapper">
+                  <div class="photo-card__content">
+                    <div class="photo-card__description">
+                      <h3 class="photo__title">неродные просторы</h3>
+                      <p class="photo__author">Автор фото: Борис</p>
+                    </div>
+                    <div class="photo__likes">
+                      <button class="photo__like-btn" type="button">
+                        <svg width="23" height="21" viewBox="0 0 23 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentColor"/>
+                        </svg>
+                      </button>
+                      <span class="photo__likes-counter">1350</span>
+                    </div>
                   </div>
-                  <span class="photo__likes">1350</span>
+                  <picture class="photo__img-wrapper">
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ../img/photo-1-desktop.webp 1x,
+                        ../img/photo-1-desktop@2x.webp 2x,
+                        ../img/photo-1-desktop.jpg 1x,
+                        ../img/photo-1-desktop@2x.jpg 2x"
+                    >
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ../img/photo-1-tablet.webp 1x,
+                        ../img/photo-1-tablet@2x.webp 2x,
+                        ../img/photo-1-tablet.jpg 1x,
+                        ../img/photo-1-tablet@2x.jpg 2x"
+                    >
+                    <img
+                      class="photo__img"
+                      src="../img/photo-1-mobile.webp"
+                      width="280"
+                      height="280"
+                      srcset="
+                        ../img/photo-1-mobile@2x.webp 2x,
+                        ../img/photo-1-mobile.jpg 1x,
+                        ../img/photo-1-mobile@2x.jpg 2x"
+                      alt="Фотография Седоны."
+                    >
+                  </picture>
+                  <!-- <img class="photo__img" src="./img/photo-1-mobile.jpg" width="280" height="280" alt=""> -->
                 </div>
-                <img class="photo__img" src="./img/photo-1-mobile.jpg" width="280" height="280" alt="">
-              </div>
+              </a>
             </li>
             <li class="photo__item">
-              <div class="photo-card__wrapper">
-                <div class="photo-card__content">
-                  <div class="photo-card__description">
-                    <h3 class="photo__title">Местная растительность</h3>
-                    <p class="photo__author">Автор фото: Сергей</p>
+              <a class="photo__item--link" href="#">
+                <div class="photo-card__wrapper">
+                  <div class="photo-card__content">
+                    <div class="photo-card__description">
+                      <h3 class="photo__title">Местная растительность</h3>
+                      <p class="photo__author">Автор фото: Сергей</p>
+                    </div>
+                    <div class="photo__likes">
+                      <button class="photo__like-btn" type="button">
+                        <svg width="23" height="21" viewBox="0 0 23 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentColor"/>
+                        </svg>
+                      </button>
+                      <span class="photo__likes-counter">143</span>
+                    </div>
                   </div>
-                  <span class="photo__likes">143</span>
+                  <picture class="photo__img-wrapper">
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ../img/photo-2-desktop.webp 1x,
+                        ../img/photo-2-desktop@2x.webp 2x,
+                        ../img/photo-2-desktop.jpg 1x,
+                        ../img/photo-2-desktop@2x.jpg 2x"
+                    >
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ../img/photo-2-tablet.webp 1x,
+                        ../img/photo-2-tablet@2x.webp 2x,
+                        ../img/photo-2-tablet.jpg 1x,
+                        ../img/photo-2-tablet@2x.jpg 2x"
+                    >
+                    <img
+                      class="photo__img"
+                      src="../img/photo-2-mobile.webp"
+                      width="280"
+                      height="280"
+                      srcset="
+                        ../img/photo-2-mobile@2x.webp 2x,
+                        ../img/photo-2-mobile.jpg 1x,
+                        ../img/photo-2-mobile@2x.jpg 2x"
+                      alt="Фотография Седоны."
+                    >
+                  </picture>
                 </div>
-                <img class="photo__img" src="./img/photo-2-mobile.jpg" width="280" height="280" alt="">
-              </div>
+              </a>
             </li>
             <li class="photo__item">
-              <div class="photo-card__wrapper">
-                <div class="photo-card__content">
-                  <div class="photo-card__description">
-                    <h3 class="photo__title">Дорога на север</h3>
-                    <p class="photo__author">Автор фото: Петр</p>
+              <a class="photo__item--link" href="#">
+                <div class="photo-card__wrapper">
+                  <div class="photo-card__content">
+                    <div class="photo-card__description">
+                      <h3 class="photo__title">Дорога на север</h3>
+                      <p class="photo__author">Автор фото: Петр</p>
+                    </div>
+                    <div class="photo__likes">
+                      <button class="photo__like-btn" type="button">
+                        <svg width="23" height="21" viewBox="0 0 23 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentColor"/>
+                        </svg>
+                      </button>
+                      <span class="photo__likes-counter">96</span>
+                    </div>
                   </div>
-                  <span class="photo__likes">96</span>
+                  <picture class="photo__img-wrapper">
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ../img/photo-3-desktop.webp 1x,
+                        ../img/photo-3-desktop@2x.webp 2x,
+                        ../img/photo-3-desktop.jpg 1x,
+                        ../img/photo-3-desktop@2x.jpg 2x"
+                    >
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ../img/photo-3-tablet.webp 1x,
+                        ../img/photo-3-tablet@2x.webp 2x,
+                        ../img/photo-3-tablet.jpg 1x,
+                        ../img/photo-3-tablet@2x.jpg 2x"
+                    >
+                    <img
+                      class="photo__img"
+                      src="../img/photo-3-mobile.webp"
+                      width="280"
+                      height="280"
+                      srcset="
+                        ../img/photo-3-mobile@2x.webp 2x,
+                        ../img/photo-3-mobile.jpg 1x,
+                        ../img/photo-3-mobile@2x.jpg 2x"
+                      alt="Фотография Седоны."
+                    >
+                  </picture>
                 </div>
-                <img class="photo__img" src="./img/photo-3-mobile.jpg" width="280" height="280" alt="">
-              </div>
+              </a>
             </li>
             <li class="photo__item">
-              <div class="photo-card__wrapper">
-                <div class="photo-card__content">
-                  <div class="photo-card__description">
-                    <h3 class="photo__title">Мост дьявола</h3>
-                    <p class="photo__author">Автор фото: Антон</p>
+              <a class="photo__item--link" href="#">
+                <div class="photo-card__wrapper">
+                  <div class="photo-card__content">
+                    <div class="photo-card__description">
+                      <h3 class="photo__title">Мост дьявола</h3>
+                      <p class="photo__author">Автор фото: Антон</p>
+                    </div>
+                    <div class="photo__likes">
+                      <button class="photo__like-btn" type="button">
+                        <svg width="23" height="21" viewBox="0 0 23 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentColor"/>
+                        </svg>
+                      </button>
+                      <span class="photo__likes-counter">254</span>
+                    </div>
                   </div>
-                  <span class="photo__likes">254</span>
+                  <picture class="photo__img-wrapper">
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ../img/photo-4-desktop.webp 1x,
+                        ../img/photo-4-desktop@2x.webp 2x,
+                        ../img/photo-4-desktop.jpg 1x,
+                        ../img/photo-4-desktop@2x.jpg 2x"
+                    >
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ../img/photo-4-tablet.webp 1x,
+                        ../img/photo-4-tablet@2x.webp 2x,
+                        ../img/photo-4-tablet.jpg 1x,
+                        ../img/photo-4-tablet@2x.jpg 2x"
+                    >
+                    <img
+                      class="photo__img"
+                      src="../img/photo-4-mobile.webp"
+                      width="280"
+                      height="280"
+                      srcset="
+                        ../img/photo-4-mobile@2x.webp 2x,
+                        ../img/photo-4-mobile.jpg 1x,
+                        ../img/photo-4-mobile@2x.jpg 2x"
+                      alt="Фотография Седоны."
+                    >
+                  </picture>
                 </div>
-                <img class="photo__img" src="./img/photo-4-mobile.jpg" width="280" height="280" alt="">
-              </div>
+              </a>
             </li>
           </ul>
         </section>
         <section class="video">
           <h2 class="video__title">Все еще сомневаетесь?</h2>
           <p class="video__text">Смотрите видеопрезентацию и скорее&nbsp;за билетами, пока они не подорожали в очередной раз!</p>
-          <img class="video__plug" src="./img/video-plug-mobile.jpg" width="280" height="177" alt="Временная заглушка. Скоро тут будет видеопрезентация.">
+          <picture class="video__plug">
+            <source
+              media="(min-width:1200px)"
+              srcset="
+                ../img/video-plug-desktop.webp 1x,
+                ../img/video-plug-desktop@2x.webp 2x,
+                ../img/video-plug-desktop.jpg 1x,
+                ../img/video-plug-desktop@2x.jpg 2x"
+            >
+            <source
+              media="(min-width:768px)"
+              srcset="
+                ../img/video-plug-tablet.webp 1x,
+                ../img/video-plug-tablet@2x.webp 2x,
+                ../img/video-plug-tablet.jpg 1x,
+                ../img/video-plug-tablet@2x.jpg 2x"
+            >
+            <img
+              class="video__plug"
+              src="../img/video-plug-mobile.webp"
+              width="280"
+              height="177"
+              srcset="
+                ../img/video-plug-mobile@2x.webp 2x,
+                ../img/video-plug-mobile.jpg 1x,
+                ../img/video-plug-mobile@2x.jpg 2x"
+              alt="Временная заглушка. Скоро тут будет видеопрезентация."
+            >
+          </picture>
         </section>
       </main>
       <footer class="page-footer">
@@ -159,8 +336,8 @@
           </li>
         </ul>
         <a class="page-footer__developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"/>
+          <svg width="28" height="36" viewBox="0 0 28 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.15 0.949951H14.05L0.549988 2.34995V27.05L14.05 35.0499L27.45 27.05V2.34995L14.15 0.949951ZM25.55 13.05L14.05 6.24995V6.14995H13.95L13.85 6.04995V6.14995L2.44999 13.05V4.04995L13.95 2.84995L25.55 4.04995V13.05ZM13.95 7.74995L25.45 14.45L20.95 17.05L13.85 12.85V14.25L19.75 17.75L18.85 18.25L13.85 15.25V16.65L17.65 18.95L16.85 19.45L13.85 17.65V19.05L15.75 20.15L13.95 21.25L2.54999 14.55L13.95 7.74995ZM2.44999 16.05L13.85 22.85V23.85L5.94999 19.15V20.55L13.95 25.35V26.45L5.94999 21.75V23.15L13.95 27.95L22.05 23.05V17.85L25.45 15.85V25.85L13.95 32.75L2.44999 25.95V16.05Z"/>
           </svg>
         </a>
       </footer>

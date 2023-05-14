@@ -5,6 +5,17 @@ let closeSuccessButton = document.querySelector('.modal-success__btn');
 let feedbackButton = document.querySelector('.feedback__button');
 let feedbackName = document.querySelector('#feedback-name');
 let feedbackForm = document.querySelector('.feedback__form');
+let inputs = document.querySelectorAll('.feedback__input');
+
+const redInputs = () => {
+  inputs.forEach(item => {
+    if (!item.checkValidity()) {
+      item.style.boxShadow = "0 0 10px #DC3545";
+    } else {
+      item.style.boxShadow = "none";
+    }
+  });
+}
 
 const modalSuccessClose = () => {
   modalSuccessWindow.style.display = "none";
@@ -26,6 +37,7 @@ const modalOpen = (evt) => {
     closeSuccessButton.addEventListener('click', modalSuccessClose);
   } else {
     modalErrorWindow.style.display = "flex";
+    redInputs();
     closeErrorButton.addEventListener('click', modalErrorClose);
   }
 }
