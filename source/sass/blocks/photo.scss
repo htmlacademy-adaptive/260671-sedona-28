@@ -68,6 +68,8 @@
     bottom: 0;
     left: 0;
     right: 0;
+    min-height: 80px;
+    padding: 17px 20px 14px 25px;
     background-color: #00000050;
     color: $white;
   }
@@ -79,6 +81,10 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 4px;
+  }
 }
 
 .photo__author {
@@ -98,7 +104,14 @@
   padding: 0;
   border: none;
   background: none;
-  color: $background-gray;
+  color: $black;
+  opacity: 0.3;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 9px;
+    color: $white;
+    opacity: 1;
+  }
 }
 
 .photo__likes-counter {
@@ -108,16 +121,23 @@
   font-weight: 700;
 }
 
-.photo__img {
+.photo__img-wrapper {
+  // width: 100%;
   order: -1;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.photo__img {
   object-fit: cover;
   object-position: center;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     height: 267px;
-    width: 100%;
-    margin-bottom: 0;
   }
 
   // @media (min-width: $desktop-width) {
@@ -128,5 +148,17 @@
 .photo__item:first-of-type .photo__img {
   @media (min-width: $tablet-width) {
     height: 400px;
+  }
+}
+
+.photo__item:first-of-type .photo-card__content {
+  @media (min-width: $desktop-width) {
+    padding: 22px 20px 15px;
+  }
+}
+
+.photo__item:first-of-type .photo__title {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 1px;
   }
 }

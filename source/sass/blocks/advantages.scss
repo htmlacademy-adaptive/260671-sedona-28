@@ -2,7 +2,7 @@
 
 .advantages__header {
   min-height: 205px;
-  padding: 32px 18px 16px;
+  padding: 34px 18px 15px;
 
   @media (min-width: $tablet-width) {
     min-height: 206px;
@@ -17,7 +17,7 @@
 }
 
 .advantages__header--title {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -45,6 +45,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 54px 33px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -85,7 +90,7 @@
   padding: 37px 18px;
 
   @media (min-width: $tablet-width) {
-    min-height: 257px;
+    min-height: 256px;
     order: 2;
     padding: 54px 33px 30px;
   }
@@ -213,6 +218,15 @@
   }
 }
 
+.advantages__icon--souvenires {
+  @media (min-width: $desktop-width) {
+    width: 101px;
+    height: 82px;
+    padding-right: 2px;
+    margin-left: -3px;
+  }
+}
+
 .advantages__items {
   display: flex;
   flex-direction: column;
@@ -233,11 +247,13 @@
   @media (min-width: $tablet-width) {
     min-height: 256px;
     padding: 41px 33px;
-    padding-top: 41px;
+    padding-top: 43px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 53px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 

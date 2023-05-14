@@ -2,7 +2,11 @@
 
 
 .map {
+  margin-bottom: 8px;
   height: 350px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .map__content {
