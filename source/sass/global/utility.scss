@@ -1,0 +1,29 @@
+@use "./global/variables" as *;
+
+.display-none {
+  display: none;
+}
+
+.desktop-show {
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.tablet-show {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.mobile-only {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.desktop-hide {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

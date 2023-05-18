@@ -366,6 +366,10 @@
     min-height: 160px;
   }
 
+  @media (min-width: $desktop-width) {
+    max-width: 768px;
+  }
+
   &:hover {
     background-color: $background-gray;
   }

@@ -8,6 +8,10 @@
   outline: none;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
 }
@@ -38,32 +42,4 @@ img {
 legend {
   margin: 0;
   padding: 0;
-}
-
-.display-none {
-  display: none;
-}
-
-.desktop-show {
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
-
-.tablet-show {
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-
-.mobile-only {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.desktop-hide {
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
 }

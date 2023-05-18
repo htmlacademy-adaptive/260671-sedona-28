@@ -99,7 +99,7 @@
   display: flex;
 }
 
-.photo__like-btn {
+.likes-icon {
   margin-right: 14px;
   padding: 0;
   border: none;
@@ -122,7 +122,6 @@
 }
 
 .photo__img-wrapper {
-  // width: 100%;
   order: -1;
   margin-bottom: 15px;
 
@@ -139,10 +138,6 @@
   @media (min-width: $tablet-width) {
     height: 267px;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   position: relative;
-  // }
 }
 
 .photo__item:first-of-type .photo__img {
