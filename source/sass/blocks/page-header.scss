@@ -83,6 +83,10 @@
   display: flex;
 }
 
+.page-header__menu--nojs {
+  display: flex;
+}
+
 .page-header__menu {
   position: absolute;
   flex-direction: column;

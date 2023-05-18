@@ -32,6 +32,27 @@
   }
 }
 
+.feedback__fieldset--fullname {
+  position: relative;
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 1px;
+      height: 338px;
+      background-color: $background-gray;
+      right: -50px;
+      top: 9px;
+    }
+
+    @media (min-width: $desktop-width) {
+
+    }
+  }
+}
+
 .feedback__fieldset--contacts {
   padding-bottom: 18px;
 }
@@ -98,6 +119,7 @@
 }
 
 .feedback__legend {
+  position: relative;
   float: left;
   margin-bottom: 20px;
   font-weight: 700;
@@ -109,6 +131,28 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     margin-bottom: 28px;
+  }
+
+  &::before {
+    position: absolute;
+    top: calc(50% + 2px);
+    left: -53px;
+    display: block;
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: $background-gray;
+  }
+
+  &::after {
+    position: absolute;
+    top: calc(50% + 2px);
+    right: -53px;
+    display: block;
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: $background-gray;
   }
 }
 
