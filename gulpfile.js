@@ -52,13 +52,6 @@ const images = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-//images copy
-
-const copyImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
-    .pipe(gulp.dest('build/img'));
-}
-
 //SVG optimization
 
 const svg = () => {
@@ -100,7 +93,6 @@ const watcher = () => {
 
 export const build = gulp.series(
   cleaner,
-  // copyImages,
   images,
   svg,
   webp,

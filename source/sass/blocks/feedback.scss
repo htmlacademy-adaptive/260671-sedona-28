@@ -46,10 +46,6 @@
       right: -50px;
       top: 9px;
     }
-
-    @media (min-width: $desktop-width) {
-
-    }
   }
 }
 
@@ -216,11 +212,11 @@
 }
 
 .feedback__custom-input--phone::after {
-  content: url('../img/phone.svg');
+  content: url("../img/phone.svg");
 }
 
 .feedback__custom-input--email::after {
-    content: url('../img/email.svg');
+  content: url("../img/email.svg");
 }
 
 .feedback__list {

@@ -1,4 +1,4 @@
-@use "../global/variables" as *;
+@import "../global/variables";
 
 .page-header {
   position: relative;
@@ -22,7 +22,6 @@
   right: 0;
   width: 56px;
   height: 56px;
-  padding-right: 5px;
   border: none;
   padding: 0;
   background-color: transparent;
@@ -51,7 +50,6 @@
   &:active {
     fill: #81b3d260;
   }
-
 }
 
 .menu__icon--close {
@@ -104,16 +102,6 @@
 .page-header__menu-item {
   width: 100%;
 }
-
-// .page-header__menu-item:nth-child(2) {
-//   @media (min-width: $tablet-width) {
-//     margin-right: 153px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     margin-right: 240px;
-//   }
-// }
 
 .page-header__menu-link {
   display: flex;
