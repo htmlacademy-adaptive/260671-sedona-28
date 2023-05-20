@@ -1,4 +1,4 @@
-@import "../global/variables";
+@use "../global/variables" as *;/* stylelint-disable-line */
 
 .page-header {
   position: relative;
