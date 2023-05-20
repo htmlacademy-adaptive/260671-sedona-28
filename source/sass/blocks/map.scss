@@ -1,9 +1,9 @@
-@use "../global/variables" as *;
-
+@use "../global/variables" as *;/* stylelint-disable-line */
 
 .map {
   margin-bottom: 8px;
   height: 350px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
