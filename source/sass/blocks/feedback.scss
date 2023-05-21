@@ -261,6 +261,10 @@
   box-sizing: border-box;
 }
 
+.feedback__custom-input:has(.invalid-input)::after {
+  background-color: $error-red;
+}
+
 .feedback__custom-input--phone::after {
   content: url("../img/phone.svg");
 }
@@ -452,5 +456,33 @@
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
+  }
+}
+
+.invalid-input {
+  padding: 16px;
+  border: none;
+  background-color: $error-red-background;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  &::after {
+    background-color: $error-red;
+  }
+
+  &::placeholder {
+    color: #DC354550;
+  }
+
+  &:hover {
+    background-color: $error-red-hover;
+  }
+
+  &:focus {
+    background-color: $error-red-background;
+    border: 4px solid $error-red;
+    padding: 12px;
   }
 }

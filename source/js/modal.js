@@ -3,16 +3,15 @@ let modalSuccessWindow = document.querySelector('.modal-success-container');
 let closeErrorButton = document.querySelector('.modal-error__btn');
 let closeSuccessButton = document.querySelector('.modal-success__btn');
 let feedbackButton = document.querySelector('.feedback__button');
-let feedbackName = document.querySelector('#feedback-name');
 let feedbackForm = document.querySelector('.feedback__form');
 let inputs = document.querySelectorAll('.feedback__input');
 
 const redInputs = () => {
   inputs.forEach(item => {
     if (!item.checkValidity()) {
-      item.style.boxShadow = "0 0 10px #DC3545";
+      item.classList.add("invalid-input");
     } else {
-      item.style.boxShadow = "none";
+      item.classList.remove("invalid-input");
     }
   });
 }
