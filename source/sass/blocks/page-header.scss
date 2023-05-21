@@ -96,6 +96,12 @@
     position: static;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+
+    &:after {
+      content: "";
+      grid-column: 3 / 4;
+      grid-row: 1 / 3;
+    }
   }
 }
 
