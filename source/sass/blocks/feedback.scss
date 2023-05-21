@@ -128,7 +128,9 @@
     font-size: 21px;
     margin-bottom: 28px;
   }
+}
 
+.feedback__legend--impression {
   &::before {
     position: absolute;
     top: calc(50% + 2px);
@@ -144,6 +146,54 @@
     position: absolute;
     top: calc(50% + 2px);
     right: -53px;
+    display: block;
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: $background-gray;
+  }
+}
+
+.feedback__legend--attraction {
+  &::before {
+    position: absolute;
+    top: calc(50% + 2px);
+    left: -53px;
+    display: block;
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: $background-gray;
+  }
+
+  &::after {
+    position: absolute;
+    top: calc(50% + 2px);
+    right: -53px;
+    display: block;
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: $background-gray;
+  }
+}
+
+.feedback__legend--emotions {
+  &::before {
+    position: absolute;
+    top: calc(50% + 2px);
+    left: -105px;
+    display: block;
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: $background-gray;
+  }
+
+  &::after {
+    position: absolute;
+    top: calc(50% + 2px);
+    right: -105px;
     display: block;
     content: "";
     width: 280px;
@@ -209,6 +259,10 @@
   height: 58px;
   background-color: $background-gray;
   box-sizing: border-box;
+}
+
+.feedback__custom-input:has(.invalid-input)::after {
+  background-color: $error-red;
 }
 
 .feedback__custom-input--phone::after {
@@ -402,5 +456,33 @@
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
+  }
+}
+
+.invalid-input {
+  padding: 16px;
+  border: none;
+  background-color: $error-red-background;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  &::after {
+    background-color: $error-red;
+  }
+
+  &::placeholder {
+    color: #DC354550;
+  }
+
+  &:hover {
+    background-color: $error-red-hover;
+  }
+
+  &:focus {
+    background-color: $error-red-background;
+    border: 4px solid $error-red;
+    padding: 12px;
   }
 }
