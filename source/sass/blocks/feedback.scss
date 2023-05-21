@@ -128,7 +128,9 @@
     font-size: 21px;
     margin-bottom: 28px;
   }
+}
 
+.feedback__legend--impression {
   &::before {
     position: absolute;
     top: calc(50% + 2px);
@@ -144,6 +146,54 @@
     position: absolute;
     top: calc(50% + 2px);
     right: -53px;
+    display: block;
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: $background-gray;
+  }
+}
+
+.feedback__legend--attraction {
+  &::before {
+    position: absolute;
+    top: calc(50% + 2px);
+    left: -53px;
+    display: block;
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: $background-gray;
+  }
+
+  &::after {
+    position: absolute;
+    top: calc(50% + 2px);
+    right: -53px;
+    display: block;
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: $background-gray;
+  }
+}
+
+.feedback__legend--emotions {
+  &::before {
+    position: absolute;
+    top: calc(50% + 2px);
+    left: -105px;
+    display: block;
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: $background-gray;
+  }
+
+  &::after {
+    position: absolute;
+    top: calc(50% + 2px);
+    right: -105px;
     display: block;
     content: "";
     width: 280px;
