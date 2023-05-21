@@ -463,17 +463,14 @@
   padding: 16px;
   border: none;
   background-color: $error-red-background;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
+  color: $error-red;
 
   &::after {
     background-color: $error-red;
   }
 
   &::placeholder {
-    color: #DC354550;
+    color: $error-red-background;
   }
 
   &:hover {
