@@ -1,8 +1,8 @@
 let menu = document.querySelector('.page-header__menu');
-let btn = document.querySelector('.menu__toggle');
-let text = document.querySelector('.menu__toggle--text');
-let menuOpenIcon = document.querySelector('.menu__icon--open');
-let menuCloseIcon = document.querySelector('.menu__icon--close');
+let btn = document.querySelector('.page-header__menu-toggle');
+let text = document.querySelector('.menu-toggle__text');
+let menuOpenIcon = document.querySelector('.menu-toggle__icon--open');
+let menuCloseIcon = document.querySelector('.menu-toggle__icon--close');
 
 menu.classList.remove('page-header__menu--nojs');
 

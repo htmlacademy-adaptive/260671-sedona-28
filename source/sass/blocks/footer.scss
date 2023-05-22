@@ -10,7 +10,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     min-height: 120px;
     padding-top: 33px;
     padding-left: 60px;
@@ -49,11 +49,9 @@
 }
 
 .page-footer__social-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
   gap: 6px;
-  width: 100%;
 }
 
 .page-footer__social-link {

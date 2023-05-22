@@ -13,7 +13,7 @@
   z-index: 2;
 }
 
-.menu__toggle {
+.page-header__menu-toggle {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -36,7 +36,7 @@
   }
 }
 
-.menu__icon--open {
+.menu-toggle__icon--open {
   fill: $basic-blue;
 
   &:hover {
@@ -52,7 +52,7 @@
   }
 }
 
-.menu__icon--close {
+.menu-toggle__icon--close {
   display: none;
   fill: $white;
 

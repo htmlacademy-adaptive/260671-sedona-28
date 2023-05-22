@@ -61,12 +61,12 @@
           <a class="page-header__logo-link" href="#">
             <img src="./img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
           </a>
-          <button class="menu__toggle" type="button">
-            <span class="visually-hidden menu__toggle--text">Открыть меню</span>
-            <svg class="menu__icon menu__icon--open" width="32" height="32">
+          <button class="page-header__menu-toggle menu-toggle" type="button">
+            <span class="visually-hidden menu-toggle__text">Открыть меню</span>
+            <svg class="menu-toggle__icon menu-toggle__icon--open" width="32" height="32">
               <use xlink:href="#menu-open"></use>
             </svg>
-            <svg class="menu__icon menu__icon--close" width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
+            <svg class="menu-toggle__icon menu-toggle__icon--close" width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="#menu-close"></use>
             </svg>
           </button>
@@ -123,25 +123,25 @@
             <fieldset class="feedback__fieldset feedback__fieldset--impression">
               <legend class="feedback__legend feedback__legend--impression">Ваше общее впечатление:</legend>
               <ul class="feedback__list feedback__list--impression">
-                <li class="feedback__item--impression">
+                <li class="feedback__item-impression">
                   <label class="feedback__label-radio" for="feedback-impression-1">
                     <input class="visually-hidden feedback__input-radio" type="radio" name="feedback-impression" id="feedback-impression-1" value="1" checked>
-                    <span class="feedback__mark--impression"></span>
-                    <span class="feedback__label--impression">Скорее положительное</span>
+                    <span class="feedback__mark-impression"></span>
+                    <span class="feedback__label-impression">Скорее положительное</span>
                   </label>
                 </li>
-                <li class="feedback__item--impression">
+                <li class="feedback__item-impression">
                   <label class="feedback__label-radio" for="feedback-impression-2">
                     <input class="visually-hidden feedback__input-radio" type="radio" name="feedback-impression" id="feedback-impression-2" value="-1">
-                    <span class="feedback__mark--impression"></span>
-                    <span class="feedback__label--impression">Скорее отрицательное</span>
+                    <span class="feedback__mark-impression"></span>
+                    <span class="feedback__label-impression">Скорее отрицательное</span>
                   </label>
                 </li>
-                <li class="feedback__item--impression">
+                <li class="feedback__item-impression">
                   <label class="feedback__label-radio" for="feedback-impression-3">
                     <input class="visually-hidden feedback__input-radio" type="radio" name="feedback-impression" id="feedback-impression-3" value="0">
-                    <span class="feedback__mark--impression"></span>
-                    <span class="feedback__label--impression">Затрудняюсь ответить</span>
+                    <span class="feedback__mark-impression"></span>
+                    <span class="feedback__label-impression">Затрудняюсь ответить</span>
                   </label>
                 </li>
               </ul>
@@ -149,42 +149,42 @@
             <fieldset class="feedback__fieldset feedback__fieldset--attraction">
               <legend class="feedback__legend feedback__legend--attraction">Посещенные<br>достопримечательности:</legend>
               <ul class="feedback__list feedback__list--attraction">
-                <li class="feedback__item--attraction">
+                <li class="feedback__item-attraction">
                   <label class="feedback__label-checkbox" for="feedback-attraction-1">
                     <input class="visually-hidden feedback__input-checkbox" type="checkbox" name="feedback-attractions" id="feedback-attraction-1" value="1" checked>
-                    <span class="feedback__mark--attraction"></span>
-                    <span class="feedback__label--attraction">Мост Дьявола</span>
+                    <span class="feedback__mark-attraction"></span>
+                    <span class="feedback__label-attraction">Мост Дьявола</span>
                   </label>
                 </li>
-                <li class="feedback__item--attraction">
+                <li class="feedback__item-attraction">
                   <label class="feedback__label-checkbox" for="feedback-attraction-2">
                     <input class="visually-hidden feedback__input-checkbox" type="checkbox" name="feedback-attractions" id="feedback-attraction-2" value="2" checked>
-                    <span class="feedback__mark--attraction"></span>
-                    <span class="feedback__label--attraction">Гора-Колокол</span>
+                    <span class="feedback__mark-attraction"></span>
+                    <span class="feedback__label-attraction">Гора-Колокол</span>
                   </label>
                 </li>
-                <li class="feedback__item--attraction">
+                <li class="feedback__item-attraction">
                   <label class="feedback__label-checkbox" for="feedback-attraction-3">
                     <input class="visually-hidden feedback__input-checkbox" type="checkbox" name="feedback-attractions" id="feedback-attraction-3" value="3" checked>
-                    <span class="feedback__mark--attraction"></span>
-                    <span class="feedback__label--attraction">Слайд-парк</span>
+                    <span class="feedback__mark-attraction"></span>
+                    <span class="feedback__label-attraction">Слайд-парк</span>
                   </label>
                 </li>
-                <li class="feedback__item--attraction">
+                <li class="feedback__item-attraction">
                   <label class="feedback__label-checkbox" for="feedback-attraction-4">
                     <input class="visually-hidden feedback__input-checkbox" type="checkbox" name="feedback-attractions" id="feedback-attraction-4" value="4">
-                    <span class="feedback__mark--attraction"></span>
-                    <span class="feedback__label--attraction">Красные скалы</span>
+                    <span class="feedback__mark-attraction"></span>
+                    <span class="feedback__label-attraction">Красные скалы</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="feedback__fieldset feedback__fieldset--emotions">
               <legend class="feedback__legend feedback__legend--emotions">Опишите свои эмоции:</legend>
-              <textarea class="feedback__input--emotions" name="feedback-emotions-field" id="feedback-emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="feedback__input-emotions" name="feedback-emotions-field" id="feedback-emotions" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <fieldset class="feedback__fieldset feedback__fieldset--submit">
-              <button class="btn__primary feedback__button" type="submit">Отправить отзыв</button>
+              <button class="btn-primary feedback__button" type="submit">Отправить отзыв</button>
               <p class="feedback__required">* — обязательные поля</p>
             </fieldset>
           </form>
@@ -224,23 +224,23 @@
           </svg>
         </a>
       </footer>
-      <div class="modal-container modal-success-container modal-js">
-        <div class="modal__content--success">
-          <div class="modal-success__content-wrapper">
-            <p class="modal__title--success">Ваш отзыв отправлен!</p>
-            <p class="modal__text--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
+      <div class="modal-container modal-container-success modal-js">
+        <div class="modal-container-success__content">
+          <div class="modal-container-success__content-wrapper">
+            <p class="modal-container-success__title">Ваш отзыв отправлен!</p>
+            <p class="modal-container-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
           </div>
-          <div class="modal-success__btn-wrapper">
-            <button class="modal-success__btn btn__primary">Закрыть окно</button>
+          <div class="modal-container-success__btn-wrapper">
+            <button class="modal-container-success__btn btn-primary">Закрыть окно</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal-container modal-error-container modal-js">
-      <div class="modal__content--error">
-        <p class="modal__title--error">Что-то пошло не&nbsp;так!</p>
-        <p class="modal__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="modal-error__btn btn__primary">Ок</button>
+    <div class="modal-container modal-container-error modal-js">
+      <div class="modal-container-error__content">
+        <p class="modal-container-error__title">Что-то пошло не&nbsp;так!</p>
+        <p class="modal-container-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="modal-container-error__btn btn-primary">Ок</button>
       </div>
     </div>
     <script src="js/menu-toggle.js"></script>

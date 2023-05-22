@@ -119,6 +119,10 @@
   display: block;
   min-height: 21px;
   font-weight: 700;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 3px;
+  }
 }
 
 .photo__img-wrapper {

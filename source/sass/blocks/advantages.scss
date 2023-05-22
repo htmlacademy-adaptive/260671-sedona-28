@@ -16,7 +16,7 @@
   }
 }
 
-.advantages__header--title {
+.advantages__header-title {
   margin-bottom: 36px;
   font-weight: 700;
   font-size: 18px;
@@ -30,7 +30,7 @@
   }
 }
 
-.advantages__header--description {
+.advantages__header-description {
   color: $charcoal;
   text-align: center;
   text-transform: uppercase;
@@ -243,7 +243,7 @@
   }
 }
 
-.advantage__secondary {
+.advantage--secondary {
   @media (min-width: $tablet-width) {
     min-height: 256px;
     padding: 41px 33px;
@@ -257,7 +257,7 @@
   }
 }
 
-.advantage__secondary:last-child {
+.advantage--secondary:last-child {
   @media (max-width: $mobile-width) {
     padding-top: 1px;
   }
