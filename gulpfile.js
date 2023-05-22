@@ -104,5 +104,5 @@ export const build = gulp.series(
 );
 
 export default gulp.series(
-  server, watcher
+  build, server, watcher
 );
