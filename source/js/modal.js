@@ -31,6 +31,7 @@ const modalErrorClose = () => {
 
 const modalOpen = (evt) => {
   evt.preventDefault();
+
   if (feedbackForm.checkValidity()) {
     modalSuccessWindow.style.display = "flex";
     closeSuccessButton.addEventListener('click', modalSuccessClose);
