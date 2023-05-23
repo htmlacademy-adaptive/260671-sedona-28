@@ -20,9 +20,16 @@ export const html = () => {
 
 //Cleaner
 
-const cleaner = () =>{
-  return deleteAsync('build')
+const cleaner = () => {
+  return deleteAsync('build');
 };
+
+// Fonts
+
+const fonts = () => {
+  return gulp.src('source/fonts/*.*')
+  .pipe(gulp.dest('build/fonts'));
+}
 
 // Styles
 
@@ -67,7 +74,7 @@ const webp = () => {
   .pipe(squoosh({
     webp:{}
   }))
-  .pipe(gulp.dest('build/img'))
+  .pipe(gulp.dest('build/img'));
 }
 
 // Server
@@ -96,6 +103,7 @@ export const build = gulp.series(
   images,
   svg,
   webp,
+  fonts,
   gulp.parallel(
     html,
     scripts,

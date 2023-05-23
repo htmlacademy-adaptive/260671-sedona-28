@@ -16,7 +16,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="../manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -61,15 +60,15 @@
     <div class="page-container">
       <header class="page-header">
         <nav class="page-header__nav">
-          <a class="page-header__logo-link" href="#">
+          <a class="page-header__logo-link" href="index.html">
             <img src="./img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
           </a>
-          <button class="menu__toggle" type="button">
-            <span class="visually-hidden menu__toggle--text">Открыть меню</span>
-            <svg class="menu__icon menu__icon--open" width="32" height="32">
+          <button class="page-header__menu-toggle menu-toggle" type="button">
+            <span class="visually-hidden menu-toggle__text">Открыть меню</span>
+            <svg class="menu-toggle__icon menu-toggle__icon--open" width="32" height="32">
               <use xlink:href="#menu-open"></use>
             </svg>
-            <svg class="menu__icon menu__icon--close" width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
+            <svg class="menu-toggle__icon menu-toggle__icon--close" width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="#menu-close"></use>
             </svg>
           </button>
@@ -102,8 +101,7 @@
         <section class="photo">
           <h2 class="visually-hidden">Фотографии Седоны.</h2>
           <ul class="photo__list">
-            <li class="photo__item">
-              <a class="photo__item--link" href="#">
+            <li class="photo__item photo-card">
                 <div class="photo-card__wrapper">
                   <div class="photo-card__content">
                     <div class="photo-card__description">
@@ -111,65 +109,67 @@
                       <p class="photo__author">Автор фото: Борис</p>
                     </div>
                     <div class="photo__likes">
-                      <svg class="likes-icon" width="23" height="21" fill="currentColor">
-                        <use xlink:href="#like"></use>
-                      </svg>
+                      <a href="#" class="photo__likes-link">
+                        <svg class="likes-icon" width="23" height="21" fill="currentColor">
+                          <use xlink:href="#like"></use>
+                        </svg>
+                      </a>
                       <span class="photo__likes-counter">1350</span>
                     </div>
                   </div>
-                  <picture class="photo__img-wrapper">
-                    <source
-                      type="image/webp"
-                      media="(min-width:1200px)"
-                      srcset="
-                        ../img/photo-1-desktop.webp 1x,
-                        ../img/photo-1-desktop@2x.webp 2x"
-                    >
-                    <source
-                      type="image/webp"
-                      media="(min-width:768px)"
-                      srcset="
-                        ../img/photo-1-tablet.webp 1x,
-                        ../img/photo-1-tablet@2x.webp 2x"
-                    >
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ../img/photo-1-mobile.webp 1x,
-                        ../img/photo-1-mobile@2x.webp 2x"
-                    >
-                    <source
-                      media="(min-width:1200px)"
-                      srcset="
-                        ../img/photo-1-desktop.jpg 1x,
-                        ../img/photo-1-desktop@2x.jpg 2x"
-                    >
-                    <source
-                      media="(min-width:768px)"
-                      srcset="
-                        ../img/photo-1-tablet.jpg 1x,
-                        ../img/photo-1-tablet@2x.jpg 2x"
-                    >
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ../img/photo-1-mobile.webp 1x,
-                        ../img/photo-1-mobile@2x.webp 2x"
-                    >
-                    <img
-                      class="photo__img"
-                      src="../img/photo-1-mobile.jpg"
-                      width="280"
-                      height="280"
-                      srcset="../img/photo-1-mobile@2x.jpg 2x"
-                      alt=""
-                    >
-                  </picture>
+                  <a href="#" class="photo-card__link">
+                    <picture class="photo__img-wrapper">
+                      <source
+                        type="image/webp"
+                        media="(min-width:1200px)"
+                        srcset="
+                          ./img/photo-1-desktop.webp 1x,
+                          ./img/photo-1-desktop@2x.webp 2x"
+                      >
+                      <source
+                        type="image/webp"
+                        media="(min-width:768px)"
+                        srcset="
+                          ./img/photo-1-tablet.webp 1x,
+                          ./img/photo-1-tablet@2x.webp 2x"
+                      >
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/photo-1-mobile.webp 1x,
+                          ./img/photo-1-mobile@2x.webp 2x"
+                      >
+                      <source
+                        media="(min-width:1200px)"
+                        srcset="
+                          ./img/photo-1-desktop.jpg 1x,
+                          ./img/photo-1-desktop@2x.jpg 2x"
+                      >
+                      <source
+                        media="(min-width:768px)"
+                        srcset="
+                          ./img/photo-1-tablet.jpg 1x,
+                          ./img/photo-1-tablet@2x.jpg 2x"
+                      >
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/photo-1-mobile.webp 1x,
+                          ./img/photo-1-mobile@2x.webp 2x"
+                      >
+                      <img
+                        class="photo__img"
+                        src="./img/photo-1-mobile.jpg"
+                        width="280"
+                        height="280"
+                        srcset="./img/photo-1-mobile@2x.jpg 2x"
+                        alt=""
+                      >
+                    </picture>
+                  </a>
                 </div>
-              </a>
             </li>
-            <li class="photo__item">
-              <a class="photo__item--link" href="#">
+            <li class="photo__item photo-card">
                 <div class="photo-card__wrapper">
                   <div class="photo-card__content">
                     <div class="photo-card__description">
@@ -177,65 +177,67 @@
                       <p class="photo__author">Автор фото: Сергей</p>
                     </div>
                     <div class="photo__likes">
-                      <svg class="likes-icon" width="23" height="21" fill="currentColor">
-                        <use xlink:href="#like"></use>
-                      </svg>
+                      <a href="#" class="photo__likes-link">
+                        <svg class="likes-icon" width="23" height="21" fill="currentColor">
+                          <use xlink:href="#like"></use>
+                        </svg>
+                      </a>
                       <span class="photo__likes-counter">143</span>
                     </div>
                   </div>
-                  <picture class="photo__img-wrapper">
-                    <source
-                      type="image/webp"
-                      media="(min-width:1200px)"
-                      srcset="
-                        ../img/photo-2-desktop.webp 1x,
-                        ../img/photo-2-desktop@2x.webp 2x"
-                    >
-                    <source
-                      type="image/webp"
-                      media="(min-width:768px)"
-                      srcset="
-                        ../img/photo-2-tablet.webp 1x,
-                        ../img/photo-2-tablet@2x.webp 2x"
-                    >
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ../img/photo-2-mobile.webp 1x,
-                        ../img/photo-2-mobile@2x.webp 2x"
-                    >
-                    <source
-                      media="(min-width:1200px)"
-                      srcset="
-                        ../img/photo-2-desktop.jpg 1x,
-                        ../img/photo-2-desktop@2x.jpg 2x"
-                    >
-                    <source
-                      media="(min-width:768px)"
-                      srcset="
-                        ../img/photo-2-tablet.jpg 1x,
-                        ../img/photo-2-tablet@2x.jpg 2x"
-                    >
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ../img/photo-2-mobile.webp 1x,
-                        ../img/photo-2-mobile@2x.webp 2x"
-                    >
-                    <img
-                      class="photo__img"
-                      src="../img/photo-2-mobile.jpg"
-                      width="280"
-                      height="280"
-                      srcset="../img/photo-2-mobile@2x.jpg 2x"
-                      alt=""
-                    >
-                  </picture>
+                  <a href="#" class="photo-card__link">
+                    <picture class="photo__img-wrapper">
+                      <source
+                        type="image/webp"
+                        media="(min-width:1200px)"
+                        srcset="
+                          ./img/photo-2-desktop.webp 1x,
+                          ./img/photo-2-desktop@2x.webp 2x"
+                      >
+                      <source
+                        type="image/webp"
+                        media="(min-width:768px)"
+                        srcset="
+                          ./img/photo-2-tablet.webp 1x,
+                          ./img/photo-2-tablet@2x.webp 2x"
+                      >
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/photo-2-mobile.webp 1x,
+                          ./img/photo-2-mobile@2x.webp 2x"
+                      >
+                      <source
+                        media="(min-width:1200px)"
+                        srcset="
+                          ./img/photo-2-desktop.jpg 1x,
+                          ./img/photo-2-desktop@2x.jpg 2x"
+                      >
+                      <source
+                        media="(min-width:768px)"
+                        srcset="
+                          ./img/photo-2-tablet.jpg 1x,
+                          ./img/photo-2-tablet@2x.jpg 2x"
+                      >
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/photo-2-mobile.webp 1x,
+                          ./img/photo-2-mobile@2x.webp 2x"
+                      >
+                      <img
+                        class="photo__img"
+                        src="./img/photo-2-mobile.jpg"
+                        width="280"
+                        height="280"
+                        srcset="./img/photo-2-mobile@2x.jpg 2x"
+                        alt=""
+                      >
+                    </picture>
+                  </a>
                 </div>
-              </a>
             </li>
-            <li class="photo__item">
-              <a class="photo__item--link" href="#">
+            <li class="photo__item photo-card">
                 <div class="photo-card__wrapper">
                   <div class="photo-card__content">
                     <div class="photo-card__description">
@@ -243,66 +245,67 @@
                       <p class="photo__author">Автор фото: Петр</p>
                     </div>
                     <div class="photo__likes">
-                      <svg class="likes-icon" width="23" height="21" fill="currentColor">
-                        <use xlink:href="#like"></use>
-                      </svg>
+                      <a href="#" class="photo__likes-link">
+                        <svg class="likes-icon" width="23" height="21" fill="currentColor">
+                          <use xlink:href="#like"></use>
+                        </svg>
+                      </a>
                       <span class="photo__likes-counter">96</span>
                     </div>
                   </div>
-
-                  <picture class="photo__img-wrapper">
-                    <source
-                      type="image/webp"
-                      media="(min-width:1200px)"
-                      srcset="
-                        ../img/photo-3-desktop.webp 1x,
-                        ../img/photo-3-desktop@2x.webp 2x"
-                    >
-                    <source
-                      type="image/webp"
-                      media="(min-width:768px)"
-                      srcset="
-                        ../img/photo-3-tablet.webp 1x,
-                        ../img/photo-3-tablet@2x.webp 2x"
-                    >
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ../img/photo-3-mobile.webp 1x,
-                        ../img/photo-3-mobile@2x.webp 2x"
-                    >
-                    <source
-                      media="(min-width:1200px)"
-                      srcset="
-                        ../img/photo-3-desktop.jpg 1x,
-                        ../img/photo-3-desktop@2x.jpg 2x"
-                    >
-                    <source
-                      media="(min-width:768px)"
-                      srcset="
-                        ../img/photo-3-tablet.jpg 1x,
-                        ../img/photo-3-tablet@2x.jpg 2x"
-                    >
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ../img/photo-3-mobile.webp 1x,
-                        ../img/photo-3-mobile@2x.webp 2x"
-                    >
-                    <img
-                      class="photo__img"
-                      src="../img/photo-3-mobile.jpg"
-                      width="280"
-                      height="280"
-                      srcset="../img/photo-3-mobile@2x.jpg 2x"
-                      alt=""
-                    >
-                  </picture>
+                  <a href="#" class="photo-card__link">
+                    <picture class="photo__img-wrapper">
+                      <source
+                        type="image/webp"
+                        media="(min-width:1200px)"
+                        srcset="
+                          ./img/photo-3-desktop.webp 1x,
+                          ./img/photo-3-desktop@2x.webp 2x"
+                      >
+                      <source
+                        type="image/webp"
+                        media="(min-width:768px)"
+                        srcset="
+                          ./img/photo-3-tablet.webp 1x,
+                          ./img/photo-3-tablet@2x.webp 2x"
+                      >
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/photo-3-mobile.webp 1x,
+                          ./img/photo-3-mobile@2x.webp 2x"
+                      >
+                      <source
+                        media="(min-width:1200px)"
+                        srcset="
+                          ./img/photo-3-desktop.jpg 1x,
+                          ./img/photo-3-desktop@2x.jpg 2x"
+                      >
+                      <source
+                        media="(min-width:768px)"
+                        srcset="
+                          ./img/photo-3-tablet.jpg 1x,
+                          ./img/photo-3-tablet@2x.jpg 2x"
+                      >
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/photo-3-mobile.webp 1x,
+                          ./img/photo-3-mobile@2x.webp 2x"
+                      >
+                      <img
+                        class="photo__img"
+                        src="./img/photo-3-mobile.jpg"
+                        width="280"
+                        height="280"
+                        srcset="./img/photo-3-mobile@2x.jpg 2x"
+                        alt=""
+                      >
+                    </picture>
+                  </a>
                 </div>
-              </a>
             </li>
-            <li class="photo__item">
-              <a class="photo__item--link" href="#">
+            <li class="photo__item photo-card">
                 <div class="photo-card__wrapper">
                   <div class="photo-card__content">
                     <div class="photo-card__description">
@@ -310,62 +313,65 @@
                       <p class="photo__author">Автор фото: Антон</p>
                     </div>
                     <div class="photo__likes">
-                      <svg class="likes-icon" width="23" height="21" fill="currentColor">
-                        <use xlink:href="#like"></use>
-                      </svg>
+                      <a href="#" class="photo__likes-link">
+                        <svg class="likes-icon" width="23" height="21" fill="currentColor">
+                          <use xlink:href="#like"></use>
+                        </svg>
+                      </a>
                       <span class="photo__likes-counter">254</span>
                     </div>
                   </div>
-                  <picture class="photo__img-wrapper">
-                    <source
-                      type="image/webp"
-                      media="(min-width:1200px)"
-                      srcset="
-                        ../img/photo-4-desktop.webp 1x,
-                        ../img/photo-4-desktop@2x.webp 2x"
-                    >
-                    <source
-                      type="image/webp"
-                      media="(min-width:768px)"
-                      srcset="
-                        ../img/photo-4-tablet.webp 1x,
-                        ../img/photo-4-tablet@2x.webp 2x"
-                    >
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ../img/photo-4-mobile.webp 1x,
-                        ../img/photo-4-mobile@2x.webp 2x"
-                    >
-                    <source
-                      media="(min-width:1200px)"
-                      srcset="
-                        ../img/photo-4-desktop.jpg 1x,
-                        ../img/photo-4-desktop@2x.jpg 2x"
-                    >
-                    <source
-                      media="(min-width:768px)"
-                      srcset="
-                        ../img/photo-4-tablet.jpg 1x,
-                        ../img/photo-4-tablet@2x.jpg 2x"
-                    >
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ../img/photo-4-mobile.webp 1x,
-                        ../img/photo-4-mobile@2x.webp 2x"
-                    >
-                    <img
-                      class="photo__img"
-                      src="../img/photo-4-mobile.jpg"
-                      width="280"
-                      height="280"
-                      srcset="../img/photo-4-mobile@2x.jpg 2x"
-                      alt=""
-                    >
-                  </picture>
+                  <a href="#" class="photo-card__link">
+                    <picture class="photo__img-wrapper">
+                      <source
+                        type="image/webp"
+                        media="(min-width:1200px)"
+                        srcset="
+                          ./img/photo-4-desktop.webp 1x,
+                          ./img/photo-4-desktop@2x.webp 2x"
+                      >
+                      <source
+                        type="image/webp"
+                        media="(min-width:768px)"
+                        srcset="
+                          ./img/photo-4-tablet.webp 1x,
+                          ./img/photo-4-tablet@2x.webp 2x"
+                      >
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/photo-4-mobile.webp 1x,
+                          ./img/photo-4-mobile@2x.webp 2x"
+                      >
+                      <source
+                        media="(min-width:1200px)"
+                        srcset="
+                          ./img/photo-4-desktop.jpg 1x,
+                          ./img/photo-4-desktop@2x.jpg 2x"
+                      >
+                      <source
+                        media="(min-width:768px)"
+                        srcset="
+                          ./img/photo-4-tablet.jpg 1x,
+                          ./img/photo-4-tablet@2x.jpg 2x"
+                      >
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/photo-4-mobile.webp 1x,
+                          ./img/photo-4-mobile@2x.webp 2x"
+                      >
+                      <img
+                        class="photo__img"
+                        src="./img/photo-4-mobile.jpg"
+                        width="280"
+                        height="280"
+                        srcset="./img/photo-4-mobile@2x.jpg 2x"
+                        alt=""
+                      >
+                    </picture>
+                  </a>
                 </div>
-              </a>
             </li>
           </ul>
         </section>
@@ -377,46 +383,46 @@
               type="image/webp"
               media="(min-width:1200px)"
               srcset="
-                ../img/video-plug-desktop.webp 1x,
-                ../img/video-plug-desktop@2x.webp 2x"
+                ./img/video-plug-desktop.webp 1x,
+                ./img/video-plug-desktop@2x.webp 2x"
             >
             <source
               type="image/webp"
               media="(min-width:768px)"
               srcset="
-                ../img/video-plug-tablet.webp 1x,
-                ../img/video-plug-tablet@2x.webp 2x"
+                ./img/video-plug-tablet.webp 1x,
+                ./img/video-plug-tablet@2x.webp 2x"
             >
             <source
               type="image/webp"
               srcset="
-                ../img/video-plug-mobile.webp 1x,
-                ../img/video-plug-mobile@2x.webp 2x"
+                ./img/video-plug-mobile.webp 1x,
+                ./img/video-plug-mobile@2x.webp 2x"
             >
             <source
               media="(min-width:1200px)"
               srcset="
-                ../img/video-plug-desktop.jpg 1x,
-                ../img/video-plug-desktop@2x.jpg 2x"
+                ./img/video-plug-desktop.jpg 1x,
+                ./img/video-plug-desktop@2x.jpg 2x"
             >
             <source
               media="(min-width:768px)"
               srcset="
-                ../img/video-plug-tablet.jpg 1x,
-                ../img/video-plug-tablet@2x.jpg 2x"
+                ./img/video-plug-tablet.jpg 1x,
+                ./img/video-plug-tablet@2x.jpg 2x"
             >
             <source
               type="image/webp"
               srcset="
-                ../img/video-plug-mobile.webp 1x,
-                ../img/video-plug-mobile@2x.webp 2x"
+                ./img/video-plug-mobile.webp 1x,
+                ./img/video-plug-mobile@2x.webp 2x"
             >
             <img
             class="video__plug"
-              src="../img/video-plug-mobile.jpg"
+              src="./img/video-plug-mobile.jpg"
               width="280"
-              height="280"
-              srcset="../img/video-plug-mobile@2x.jpg 2x"
+              height="177"
+              srcset="./img/video-plug-mobile@2x.jpg 2x"
               alt="Временная заглушка. Скоро тут будет видеопрезентация."
             >
           </picture>

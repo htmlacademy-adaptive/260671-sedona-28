@@ -16,7 +16,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="../manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -61,12 +60,12 @@
           <a class="page-header__logo-link" href="#">
             <img src="./img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
           </a>
-          <button class="menu__toggle" type="button">
-            <span class="visually-hidden menu__toggle--text">Открыть меню.</span>
-            <svg class="menu__icon menu__icon--open" width="32" height="32">
+          <button class="page-header__menu-toggle menu-toggle" type="button">
+            <span class="visually-hidden menu-toggle__text">Открыть меню.</span>
+            <svg class="menu-toggle__icon menu-toggle__icon--open" width="32" height="32">
               <use xlink:href="#menu-open"></use>
             </svg>
-            <svg class="menu__icon menu__icon--close" width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
+            <svg class="menu-toggle__icon menu-toggle__icon--close" width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="#menu-close"></use>
             </svg>
           </button>
@@ -94,8 +93,8 @@
         </section>
         <section class="advantages">
           <header class="advantages__header">
-            <h2 class="advantages__header--title">Седона — небольшой городок&nbsp;в&nbsp;Аризоне, <br>заслуживающий большего!</h2>
-            <p class="advantages__header--description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            <h2 class="advantages__header-title">Седона — небольшой городок&nbsp;в&nbsp;Аризоне, <br>заслуживающий большего!</h2>
+            <p class="advantages__header-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </header>
           <ul class="advantages__list">
             <li class="advantages__item advantage advantage-1">
@@ -110,46 +109,46 @@
                     type="image/webp"
                     media="(min-width:1200px)"
                     srcset="
-                      ../img/advantage-1-desktop.webp 1x,
-                      ../img/advantage-1-desktop@2x.webp 2x"
+                      ./img/advantage-1-desktop.webp 1x,
+                      ./img/advantage-1-desktop@2x.webp 2x"
                   >
                   <source
                     type="image/webp"
                     media="(min-width:768px)"
                     srcset="
-                      ../img/advantage-1-tablet.webp 1x,
-                      ../img/advantage-1-tablet@2x.webp 2x"
+                      ./img/advantage-1-tablet.webp 1x,
+                      ./img/advantage-1-tablet@2x.webp 2x"
                   >
                   <source
                     type="image/webp"
                     srcset="
-                      ../img/advantage-1-mobile.webp 1x,
-                      ../img/advantage-1-mobile@2x.webp 2x"
+                      ./img/advantage-1-mobile.webp 1x,
+                      ./img/advantage-1-mobile@2x.webp 2x"
                   >
                   <source
                     media="(min-width:1200px)"
                     srcset="
-                      ../img/advantage-1-desktop.jpg 1x,
-                      ../img/advantage-1-desktop@2x.jpg 2x"
+                      ./img/advantage-1-desktop.jpg 1x,
+                      ./img/advantage-1-desktop@2x.jpg 2x"
                   >
                   <source
                     media="(min-width:768px)"
                     srcset="
-                      ../img/advantage-1-tablet.jpg 1x,
-                      ../img/advantage-1-tablet@2x.jpg 2x"
+                      ./img/advantage-1-tablet.jpg 1x,
+                      ./img/advantage-1-tablet@2x.jpg 2x"
                   >
                   <source
                     type="image/webp"
                     srcset="
-                      ../img/advantage-1-mobile.webp 1x,
-                      ../img/advantage-1-mobile@2x.webp 2x"
+                      ./img/advantage-1-mobile.webp 1x,
+                      ./img/advantage-1-mobile@2x.webp 2x"
                   >
                   <img
                     class="advantage__image"
-                    src="../img/advantage-1-mobile.jpg"
+                    src="./img/advantage-1-mobile.jpg"
                     width="320"
                     height="260"
-                    srcset="../img/advantage-1-mobile@2x.jpg 2x"
+                    srcset="./img/advantage-1-mobile@2x.jpg 2x"
                     alt="Фотография Седоны."
                   >
                 </picture>
@@ -191,57 +190,57 @@
                   type="image/webp"
                   media="(min-width:1200px)"
                   srcset="
-                    ../img/advantage-2-desktop.webp 1x,
-                    ../img/advantage-2-desktop@2x.webp 2x"
+                    ./img/advantage-2-desktop.webp 1x,
+                    ./img/advantage-2-desktop@2x.webp 2x"
                 >
                 <source
                   type="image/webp"
                   media="(min-width:768px)"
                   srcset="
-                    ../img/advantage-2-tablet.webp 1x,
-                    ../img/advantage-2-tablet@2x.webp 2x"
+                    ./img/advantage-2-tablet.webp 1x,
+                    ./img/advantage-2-tablet@2x.webp 2x"
                 >
                 <source
                   type="image/webp"
                   srcset="
-                    ../img/advantage-2-mobile.webp 1x,
-                    ../img/advantage-2-mobile@2x.webp 2x"
+                    ./img/advantage-2-mobile.webp 1x,
+                    ./img/advantage-2-mobile@2x.webp 2x"
                 >
                 <source
                   media="(min-width:1200px)"
                   srcset="
-                    ../img/advantage-2-desktop.jpg 1x,
-                    ../img/advantage-2-desktop@2x.jpg 2x"
+                    ./img/advantage-2-desktop.jpg 1x,
+                    ./img/advantage-2-desktop@2x.jpg 2x"
                 >
                 <source
                   media="(min-width:768px)"
                   srcset="
-                    ../img/advantage-2-tablet.jpg 1x,
-                    ../img/advantage-2-tablet@2x.jpg 2x"
+                    ./img/advantage-2-tablet.jpg 1x,
+                    ./img/advantage-2-tablet@2x.jpg 2x"
                 >
                 <img
                   class="advantage__image"
-                  src="../img/advantage-2-mobile.jpg"
+                  src="./img/advantage-2-mobile.jpg"
                   width="320"
                   height="260"
-                  srcset="../img/advantage-2-mobile@2x.jpg 2x"
+                  srcset="./img/advantage-2-mobile@2x.jpg 2x"
                   alt="Фотография моста Дьявола."
                 >
               </picture>
             </li>
             <li class="advantages__item">
               <ul class="advantages__items">
-                <li class="advantages__item advantage advantage__secondary">
+                <li class="advantages__item advantage advantage--secondary">
                   <h3 class="advantages__title advantage__title">Небольшая <br class="display-none tablet-show">площадь</h3>
                   <span class="advantage__number">- №3 -</span>
                   <p class="advantages__text advantage__text">Все интересные места находятся очень&nbsp;<br class="display-none desktop-show">близко</p>
                 </li>
-                <li class="advantages__item advantage advantage__secondary">
+                <li class="advantages__item advantage advantage--secondary">
                   <h3 class="advantages__title advantage__title">Красивая <br class="display-none tablet-show">дорога</h3>
                   <span class="advantage__number">- №4 -</span>
                   <p class="advantages__text advantage__text">Ехать в Седону из Лас-Вегаса <br class="mobile-only">совсем <br class="display-none tablet-show">не&nbsp;скучно!</p>
                 </li>
-                <li class="advantages__item advantage advantage__secondary">
+                <li class="advantages__item advantage advantage--secondary">
                   <h3 class="advantages__title advantage__title">Мало <br class="display-none tablet-show">туристов</h3>
                   <span class="advantage__number">- №5 -</span>
                   <p class="advantages__text advantage__text">Большинство едет в гранд каньон <br class="mobile-only">и толпится там</p>
@@ -254,7 +253,7 @@
           <h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
           <p class="find__title">Заинтересовались?</p>
           <p class="find__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в седоне</p>
-          <a class="find__btn btn__primary" href="#">Найти гостиницу</a>
+          <a class="find__btn btn-primary" href="#">Найти гостиницу</a>
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта седоны.</h2>
