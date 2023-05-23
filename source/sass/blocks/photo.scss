@@ -38,11 +38,7 @@
 
 .photo__item:first-of-type {
   @media (min-width: $tablet-width) {
-    grid-column: 1 / 3;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
   }
 }
 
@@ -95,6 +91,10 @@
   }
 }
 
+.photo__likes-link {
+  max-height: 26px;
+}
+
 .photo__likes {
   display: flex;
 }
@@ -125,7 +125,7 @@
   }
 }
 
-.photo__img-wrapper {
+.photo-card__link {
   order: -1;
   margin-bottom: 15px;
 
