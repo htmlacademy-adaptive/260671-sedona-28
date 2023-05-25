@@ -159,18 +159,92 @@
 .feature {
   display: flex;
 
+  &::after {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    margin-right: 7px;
+    order: -1;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 0;
+      margin-bottom: 17px;
+      width: 80px;
+      height: 80px;
+      align-self: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 25px;
+    }
+  }
+
+
   @media (min-width: $tablet-width) {
     flex-direction: column;
     align-items: center;
-    min-height: 256px;
-    padding: 60px 33px;
+    min-height: 330px;
+    padding: 60px 33px 15px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     align-items: center;
     min-height: 330px;
-    padding: 64px 33px;
+    padding: 64px 33px 15px;
+  }
+}
+
+.feature--housing::after {
+  background-image: url("/img/house.svg");
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+    margin-top: -5px;
+    margin-left: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+    margin-top: 0;
+    margin-left: -2px;
+  }
+}
+
+.feature--food::after {
+  background-image: url("/img/burger.svg");
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    margin-top: -5px;
+    margin-left: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
+    margin-top: 0;
+    margin-left: -2px;
+  }
+}
+
+.feature--souvenires::after {
+  background-image: url("/img/present.svg");
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13px;
+    margin-left: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 88px;
+    margin-bottom: 25px;
+    margin-top: 0;
+    margin-left: -2px;
   }
 }
 
@@ -199,31 +273,6 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-  }
-}
-
-.advantages__icon {
-  margin-right: 7px;
-  order: -1;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 0;
-    margin-bottom: 17px;
-    width: 80px;
-    height: 80px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 25px;
-  }
-}
-
-.advantages__icon--souvenires {
-  @media (min-width: $desktop-width) {
-    width: 101px;
-    height: 82px;
-    padding-right: 2px;
-    margin-left: -3px;
   }
 }
 

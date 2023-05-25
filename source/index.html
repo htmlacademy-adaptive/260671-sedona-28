@@ -21,6 +21,10 @@
     <meta name="theme-color" content="#ffffff">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/ptsans-400.woff" as="font">
+    <link rel="preload" href="fonts/ptsans-400.woff2" as="font">
+    <link rel="preload" href="fonts/ptsans-700.woff" as="font">
+    <link rel="preload" href="fonts/ptsans-700.woff2" as="font">
   </head>
   <body class="page-body">
 
@@ -89,7 +93,7 @@
         <h1 class="visually-hidden">Городок Седона</h1>
         <section class="intro">
           <h2 class="visually-hidden">Добро пожаловать в великолепную Седону</h2>
-          <img class="intro__text" src="./img/intro-text.svg" width="282" height="214" alt="">
+          <img class="intro__text" src="./img/intro-text.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону, потому что Гранд Каньон хуже.">
         </section>
         <section class="advantages">
           <header class="advantages__header">
@@ -156,26 +160,23 @@
             </li>
             <li class="advantages__item advantages__item--features">
               <ul class="features">
-                <li class="features__item feature">
+                <li class="features__item feature feature--housing">
                   <div class="feature__content feature__content--housing">
                     <h3 class="advantages__title feature__title">Жилье</h3>
                     <p class="advantages__text feature__text">Рекомендуем пожить в настоящем мотеле,&nbsp;все как&nbsp;в кино!</p>
                   </div>
-                  <img class="advantages__icon advantages__icon--housing" src="./img/house.svg" width="40" height="40" alt="">
                 </li>
-                <li class="features__item feature">
+                <li class="features__item feature feature--food">
                   <div class="feature__content feature__content--food">
                     <h3 class="advantages__title feature__title">Еда</h3>
                     <p class="advantages__text feature__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы&nbsp;НЕ&nbsp;разочаруетесь!</p>
                   </div>
-                  <img class="advantages__icon advantages__icon--food" src="./img/burger.svg" width="40" height="40" alt="">
                 </li>
-                <li class="features__item feature">
+                <li class="features__item feature feature--souvenires">
                   <div class="feature__content feature__content--souvenires">
                     <h3 class="advantages__title feature__title">Сувениры</h3>
                     <p class="advantages__text feature__text">Не только китайского, <br class="display-none desktop-show">но&nbsp;и местного производства!</p>
                   </div>
-                  <img class="advantages__icon advantages__icon--souvenires" src="./img/present.svg" width="40" height="40" alt="">
                 </li>
               </ul>
             </li>

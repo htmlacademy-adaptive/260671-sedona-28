@@ -21,6 +21,10 @@
     <meta name="theme-color" content="#ffffff">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/ptsans-400.woff" as="font">
+    <link rel="preload" href="fonts/ptsans-400.woff2" as="font">
+    <link rel="preload" href="fonts/ptsans-700.woff" as="font">
+    <link rel="preload" href="fonts/ptsans-700.woff2" as="font">
   </head>
   <body class="page-body">
 
@@ -112,7 +116,7 @@
               <legend class="feedback__legend">Контактная информация:</legend>
               <label for="feedback-phone" class="feedback__label">Контактный телефон*:</label>
               <div class="feedback__custom-input feedback__custom-input--phone">
-                <input class="feedback__input feedback__input--custom feedback__input--phone" id="feedback-phone" name="feedback-phone-field" type="tel" required placeholder="Введите телефон">
+                <input class="feedback__input feedback__input--custom feedback__input--phone" id="feedback-phone" name="feedback-phone-field" type="tel" required placeholder="Введите телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
               </div>
               <label for="feedback-email" class="feedback__label">Электронная почта*:</label>
               <div class="feedback__custom-input feedback__custom-input--email">

@@ -35,6 +35,11 @@
 .feedback__fieldset--fullname {
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 13px;
+    padding-bottom: 2px;
+  }
+
   &::after {
     @media (min-width: $tablet-width) {
       position: absolute;
@@ -43,19 +48,28 @@
       width: 1px;
       height: 338px;
       background-color: $background-gray;
-      right: -50px;
+      right: -30px;
       top: 9px;
+
+      @media (min-width: $desktop-width) {
+        right: -50px;
+      }
     }
   }
 }
 
 .feedback__fieldset--contacts {
   padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 13px;
+    padding-bottom: 2px;
+  }
 }
 
 .feedback__fieldset--impression {
   @media (min-width: $tablet-width) {
-    padding: 63px 36px 0;
+    padding: 61px 36px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,7 +79,7 @@
 
 .feedback__fieldset--attraction {
   @media (min-width: $tablet-width) {
-    padding: 48px 84px 0;
+    padding: 49px 84px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -106,7 +120,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    padding: 47px 0 0;
+    padding: 48px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -131,74 +145,110 @@
 }
 
 .feedback__legend--impression {
-  &::before {
-    position: absolute;
-    top: calc(50% + 2px);
-    left: -53px;
-    display: block;
-    content: "";
-    width: 280px;
-    height: 1px;
-    background-color: $background-gray;
-  }
+  @media (min-width: $tablet-width) {
+    &::before {
+      position: absolute;
+      top: calc(50%);
+      left: -33px;
+      display: block;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: $background-gray;
 
-  &::after {
-    position: absolute;
-    top: calc(50% + 2px);
-    right: -53px;
-    display: block;
-    content: "";
-    width: 280px;
-    height: 1px;
-    background-color: $background-gray;
+      @media (min-width: $desktop-width) {
+        left: -53px;
+        width: 280px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: calc(50%);
+      right: -33px;
+      display: block;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: $background-gray;
+
+      @media (min-width: $desktop-width) {
+        right: -53px;
+        width: 280px;
+      }
+    }
   }
 }
 
 .feedback__legend--attraction {
-  &::before {
-    position: absolute;
-    top: calc(50% + 2px);
-    left: -53px;
-    display: block;
-    content: "";
-    width: 280px;
-    height: 1px;
-    background-color: $background-gray;
-  }
+  @media (min-width: $tablet-width) {
+    &::before {
+      position: absolute;
+      top: calc(50%);
+      left: -85px;
+      display: block;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: $background-gray;
 
-  &::after {
-    position: absolute;
-    top: calc(50% + 2px);
-    right: -53px;
-    display: block;
-    content: "";
-    width: 280px;
-    height: 1px;
-    background-color: $background-gray;
+      @media (min-width: $desktop-width) {
+        right: -50px;
+        width: 280px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: calc(50%);
+      right: -85px;
+      display: block;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: $background-gray;
+
+      @media (min-width: $desktop-width) {
+        right: -50px;
+        width: 280px;
+      }
+    }
   }
 }
 
 .feedback__legend--emotions {
-  &::before {
-    position: absolute;
-    top: calc(50% + 2px);
-    left: -105px;
-    display: block;
-    content: "";
-    width: 280px;
-    height: 1px;
-    background-color: $background-gray;
-  }
+  @media (min-width: $tablet-width) {
+    &::before {
+      position: absolute;
+      top: calc(50%);
+      left: -5px;
+      display: block;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: $background-gray;
 
-  &::after {
-    position: absolute;
-    top: calc(50% + 2px);
-    right: -105px;
-    display: block;
-    content: "";
-    width: 280px;
-    height: 1px;
-    background-color: $background-gray;
+      @media (min-width: $desktop-width) {
+        right: -95px;
+        width: 280px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: calc(50%);
+      right: -5px;
+      display: block;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: $background-gray;
+
+      @media (min-width: $desktop-width) {
+        right: -95px;
+        width: 280px;
+      }
+    }
   }
 }
 
